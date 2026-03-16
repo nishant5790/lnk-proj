@@ -8,11 +8,14 @@ from mcp_trends.sources.hackernews import search_hackernews
 from mcp_trends.sources.youtube import search_youtube
 from mcp_trends.sources.github import search_github
 from mcp_trends.sources.google import search_google_linkedin
+from mcp_trends.sources.reddit import search_reddit
+from mcp_trends.sources.rss import search_rss
+from mcp_trends.sources.podcast import search_podcasts
 from mcp_trends.chains.summarizer import summarize_trends
 
 mcp = FastMCP(
     "Trends MCP Server",
-    instructions="Find trending topics across Hacker News, YouTube, GitHub, and LinkedIn",
+    instructions="Find trending topics across Hacker News, YouTube, GitHub, LinkedIn, Reddit, RSS feeds, and Podcasts",
 )
 
 
@@ -68,11 +71,47 @@ async def find_google_linkedin_trends(topic: str, limit: int = 10) -> str:
 
 
 @mcp.tool()
+async def find_reddit_trends(topic: str, limit: int = 10) -> str:
+    """Search Reddit for trending discussions about a topic from the last week.
+
+    Args:
+        topic: The topic to search for
+        limit: Maximum number of results to return (default: 10)
+    """
+    result = await search_reddit(topic, limit)
+    return result.model_dump_json(indent=2)
+
+
+@mcp.tool()
+async def find_rss_trends(topic: str, limit: int = 10) -> str:
+    """Search top industry publications (TechCrunch, HubSpot, SaaStr, etc.) for articles about a topic.
+
+    Args:
+        topic: The topic to search for
+        limit: Maximum number of results to return (default: 10)
+    """
+    result = await search_rss(topic, limit)
+    return result.model_dump_json(indent=2)
+
+
+@mcp.tool()
+async def find_podcast_trends(topic: str, limit: int = 10) -> str:
+    """Search Podcast Index for trending shows and episodes about a topic.
+
+    Args:
+        topic: The topic to search for
+        limit: Maximum number of results to return (default: 10)
+    """
+    result = await search_podcasts(topic, limit)
+    return result.model_dump_json(indent=2)
+
+
+@mcp.tool()
 async def aggregate_trends(topic: str, limit: int = 5) -> str:
     """Search ALL sources for trending content about a topic and provide an AI-generated summary.
 
-    Queries Hacker News, YouTube, GitHub, and LinkedIn concurrently, then uses
-    Gemini to analyze and summarize the top trends across all sources.
+    Queries Hacker News, YouTube, GitHub, LinkedIn, Reddit, RSS feeds, and Podcasts
+    concurrently, then uses Gemini to analyze and summarize the top trends across all sources.
 
     Args:
         topic: The topic to search for
@@ -83,10 +122,13 @@ async def aggregate_trends(topic: str, limit: int = 5) -> str:
         search_youtube(topic, limit),
         search_github(topic, limit),
         search_google_linkedin(topic, limit),
+        search_reddit(topic, limit),
+        search_rss(topic, limit),
+        search_podcasts(topic, limit),
         return_exceptions=True,
     )
 
-    source_names = ["hackernews", "youtube", "github", "google_linkedin"]
+    source_names = ["hackernews", "youtube", "github", "google_linkedin", "reddit", "rss", "podcasts"]
     source_results = {}
 
     for name, result in zip(source_names, results):
