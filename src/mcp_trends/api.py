@@ -14,6 +14,9 @@ from mcp_trends.sources.github import search_github
 from mcp_trends.sources.google import search_google_linkedin
 from mcp_trends.sources.hackernews import search_hackernews
 from mcp_trends.sources.youtube import search_youtube
+from mcp_trends.sources.reddit import search_reddit
+from mcp_trends.sources.rss import search_rss
+from mcp_trends.sources.podcast import search_podcasts
 
 Period = Literal["week", "month", "quarter"]
 
@@ -46,6 +49,9 @@ async def root() -> dict[str, object]:
             "/trends/youtube",
             "/trends/github",
             "/trends/google-linkedin",
+            "/trends/reddit",
+            "/trends/rss",
+            "/trends/podcasts",
             "/trends/aggregate",
         ],
     }
@@ -71,6 +77,21 @@ async def google_linkedin_trends(payload: TrendRequest) -> SourceResult:
     return await search_google_linkedin(payload.topic, payload.limit)
 
 
+@app.post("/trends/reddit", response_model=SourceResult)
+async def reddit_trends(payload: TrendRequest) -> SourceResult:
+    return await search_reddit(payload.topic, payload.limit)
+
+
+@app.post("/trends/rss", response_model=SourceResult)
+async def rss_trends(payload: TrendRequest) -> SourceResult:
+    return await search_rss(payload.topic, payload.limit)
+
+
+@app.post("/trends/podcasts", response_model=SourceResult)
+async def podcast_trends(payload: TrendRequest) -> SourceResult:
+    return await search_podcasts(payload.topic, payload.limit)
+
+
 @app.post("/trends/aggregate", response_model=AggregatedTrends)
 async def aggregate_trends(payload: TrendRequest) -> AggregatedTrends:
     results = await asyncio.gather(
@@ -78,10 +99,13 @@ async def aggregate_trends(payload: TrendRequest) -> AggregatedTrends:
         search_youtube(payload.topic, payload.limit),
         search_github(payload.topic, payload.limit),
         search_google_linkedin(payload.topic, payload.limit),
+        search_reddit(payload.topic, payload.limit),
+        search_rss(payload.topic, payload.limit),
+        search_podcasts(payload.topic, payload.limit),
         return_exceptions=True,
     )
 
-    source_names = ["hackernews", "youtube", "github", "google_linkedin"]
+    source_names = ["hackernews", "youtube", "github", "google_linkedin", "reddit", "rss", "podcasts"]
     source_results: dict[str, SourceResult] = {}
 
     for name, result in zip(source_names, results):
@@ -101,7 +125,7 @@ async def aggregate_trends(payload: TrendRequest) -> AggregatedTrends:
 
 @app.get("/trends/{source}", response_model=SourceResult)
 async def trends_by_source(
-    source: Literal["hackernews", "youtube", "github", "google-linkedin"],
+    source: Literal["hackernews", "youtube", "github", "google-linkedin", "reddit", "rss", "podcasts"],
     topic: str = Query(..., min_length=1),
     limit: int = Query(10, ge=1, le=50),
     period: Period = Query("week"),
@@ -112,6 +136,12 @@ async def trends_by_source(
         return await search_youtube(topic, limit)
     if source == "github":
         return await search_github(topic, limit)
+    if source == "reddit":
+        return await search_reddit(topic, limit)
+    if source == "rss":
+        return await search_rss(topic, limit)
+    if source == "podcasts":
+        return await search_podcasts(topic, limit)
     return await search_google_linkedin(topic, limit)
 
 
