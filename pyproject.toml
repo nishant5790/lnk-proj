@@ -1,0 +1,18 @@
+[project]
+name = "mcp-trends"
+version = "0.1.0"
+description = "MCP server for discovering trending topics across multiple sources"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]",
+    "langchain-google-genai",
+    "langchain-core",
+    "httpx",
+    "beautifulsoup4",
+    "pydantic",
+    "pydantic-settings",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
