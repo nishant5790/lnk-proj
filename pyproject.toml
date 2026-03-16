@@ -11,8 +11,13 @@ dependencies = [
     "beautifulsoup4",
     "pydantic",
     "pydantic-settings",
+    "fastapi==0.116.1",
+    "uvicorn==0.35.0",
 ]
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[project.scripts]
+mcp-trends-api = "mcp_trends.api:main"

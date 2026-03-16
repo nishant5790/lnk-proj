@@ -33,6 +33,42 @@ An MCP server that discovers trending topics across multiple sources using LangC
    uv run python -m mcp_trends.server
    ```
 
+## Deploy as REST API
+
+This project also includes a FastAPI wrapper so you can deploy it as a regular HTTP API.
+
+Run locally:
+
+```bash
+uv run mcp-trends-api
+```
+
+The API starts on `http://0.0.0.0:8000` by default (configurable via `.env`):
+
+- `API_HOST` (default: `0.0.0.0`)
+- `API_PORT` (default: `8000`)
+
+Interactive docs:
+
+- Swagger UI: `http://localhost:8000/docs`
+
+Main endpoints:
+
+- `POST /trends/hackernews`
+- `POST /trends/youtube`
+- `POST /trends/github`
+- `POST /trends/google-linkedin`
+- `POST /trends/aggregate`
+- `GET /trends/{source}?topic=...&limit=...`
+
+Example request:
+
+```bash
+curl -X POST http://localhost:8000/trends/aggregate \
+  -H "Content-Type: application/json" \
+  -d '{"topic":"ai agents","limit":5,"period":"week"}'
+```
+
 ## MCP Client Configuration
 
 ### Cursor

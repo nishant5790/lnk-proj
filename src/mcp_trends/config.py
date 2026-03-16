@@ -13,6 +13,9 @@ class Settings(BaseSettings):
     youtube_min_views: int = 1000
     hackernews_min_points: int = 5
 
+    api_host: str = "0.0.0.0"
+    api_port: int = 8000
+
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
 
