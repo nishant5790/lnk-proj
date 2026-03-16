@@ -10,6 +10,9 @@ from mcp_trends.sources.hackernews import search_hackernews
 from mcp_trends.sources.youtube import search_youtube
 from mcp_trends.sources.github import search_github
 from mcp_trends.sources.google import search_google_linkedin
+from mcp_trends.sources.reddit import search_reddit
+from mcp_trends.sources.rss import search_rss
+from mcp_trends.sources.podcast import search_podcasts
 from mcp_trends.chains.summarizer import summarize_trends
 
 RESULTS_DIR = Path(__file__).parent / "results"
@@ -19,7 +22,10 @@ SOURCES = {
     "2": ("YouTube", search_youtube),
     "3": ("GitHub", search_github),
     "4": ("Google/LinkedIn", search_google_linkedin),
-    "5": ("All + Summary", None),
+    "5": ("Reddit", search_reddit),
+    "6": ("RSS Feeds", search_rss),
+    "7": ("Podcasts", search_podcasts),
+    "8": ("All + Summary", None),
 }
 
 
@@ -74,8 +80,11 @@ async def search_all(topic, limit, period="week"):
         search_youtube(topic, limit),
         search_github(topic, limit),
         search_google_linkedin(topic, limit),
+        search_reddit(topic, limit),
+        search_rss(topic, limit),
+        search_podcasts(topic, limit),
     )
-    names = ["Hacker News", "YouTube", "GitHub", "Google/LinkedIn"]
+    names = ["Hacker News", "YouTube", "GitHub", "Google/LinkedIn", "Reddit", "RSS Feeds", "Podcasts"]
     source_map = {}
     for name, result in zip(names, results):
         print(f"\n--- {name} ---")
@@ -109,8 +118,8 @@ async def main():
         print("\nSources:")
         for key, (name, _) in SOURCES.items():
             print(f"  {key}. {name}")
-        print("Pick a source [1-5, default=5]:")
-        choice = input("> ").strip() or "5"
+        print("Pick a source [1-8, default=8]:")
+        choice = input("> ").strip() or "8"
 
         print("\nTime period — w=week, m=month, q=quarter [default=w]:")
         period_input = input("> ").strip().lower() or "w"
@@ -123,7 +132,7 @@ async def main():
 
         print(f"\nSearching '{topic}' (period={period})...\n")
 
-        if choice == "5":
+        if choice == "8":
             await search_all(topic, limit, period)
         elif choice in SOURCES:
             name, fn = SOURCES[choice]
