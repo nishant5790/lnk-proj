@@ -1,0 +1,1154 @@
+{
+  "topic": "AI Engineer",
+  "searched_at": "2026-03-19T14:52:09.688286",
+  "sources": {
+    "hackernews": {
+      "results": [
+        {
+          "title": "Google Engineers Launch \"Sashiko\" for Agentic AI Code Review of the Linux Kernel",
+          "url": "https://www.phoronix.com/news/Sashiko-Linux-AI-Code-Review",
+          "source": "hackernews",
+          "metadata": {
+            "points": 93,
+            "num_comments": 46,
+            "engagement_ratio": 0.49,
+            "discussion_url": "https://news.ycombinator.com/item?id=47427647",
+            "author": "speckx",
+            "created_at": "2026-03-18T16:17:44Z"
+          }
+        },
+        {
+          "title": "Mining your team's PR reviews into automated code review rules",
+          "url": "https://www.valon.ai/blog/your-best-engineers-already-wrote-your-code-review-rules",
+          "source": "hackernews",
+          "metadata": {
+            "points": 7,
+            "num_comments": 0,
+            "engagement_ratio": 0.0,
+            "discussion_url": "https://news.ycombinator.com/item?id=47426473",
+            "author": "gmax",
+            "created_at": "2026-03-18T14:46:44Z"
+          }
+        },
+        {
+          "title": "The #1 Reason Engineers Fail Technical Interviews (Data from 20K+ Sessions)",
+          "url": "https://snubber.ai/blog/state-of-hardware-engineering-interviews-2026",
+          "source": "hackernews",
+          "metadata": {
+            "points": 6,
+            "num_comments": 0,
+            "engagement_ratio": 0.0,
+            "discussion_url": "https://news.ycombinator.com/item?id=47430766",
+            "author": "Andreas2202",
+            "created_at": "2026-03-18T20:07:13Z"
+          }
+        },
+        {
+          "title": "Show HN: We built AI agents that reduce mortgage processing from 18 days to 3\u20135",
+          "url": "https://app.simplai.ai/register",
+          "source": "hackernews",
+          "metadata": {
+            "points": 6,
+            "num_comments": 2,
+            "engagement_ratio": 0.33,
+            "discussion_url": "https://news.ycombinator.com/item?id=47425482",
+            "author": "SimplAI_ai",
+            "created_at": "2026-03-18T13:21:22Z"
+          }
+        }
+      ],
+      "source": "hackernews",
+      "query": "AI Engineer",
+      "fetched_at": "2026-03-19 09:21:48.939654",
+      "error": null
+    },
+    "youtube": {
+      "results": [
+        {
+          "title": "A Week in my life as a Software Engineer in South Africa \ud83c\uddff\ud83c\udde6",
+          "url": "https://www.youtube.com/watch?v=cEh48uJtdko",
+          "source": "youtube",
+          "metadata": {
+            "channel": "Nkosinathi Sibiya",
+            "view_count": 4959,
+            "like_count": 372,
+            "comment_count": 117,
+            "like_ratio_pct": 7.5,
+            "published_at": "2026-03-15T08:00:40Z",
+            "description": "Get my Merch here https://bytedrip.shop if you want the best platform to learn how to code Here are my recommended Scrimba ..."
+          }
+        },
+        {
+          "title": "Watch THESE, Get Ahead Of 99% Engineers!",
+          "url": "https://www.youtube.com/watch?v=x_qLOn1xMOI",
+          "source": "youtube",
+          "metadata": {
+            "channel": "Vishakha Sadhwani",
+            "view_count": 11023,
+            "like_count": 812,
+            "comment_count": 9,
+            "like_ratio_pct": 7.37,
+            "published_at": "2026-03-17T13:49:51Z",
+            "description": "Vishakha Sadhwani: Watch THESE, Get Ahead Of 99% Engineers! This week, I went deep into content that made me better with ..."
+          }
+        },
+        {
+          "title": "Become Top 0.1% AI Engineer in 90 Days - How? ",
+          "url": "https://www.youtube.com/watch?v=JkJOZewGTU4",
+          "source": "youtube",
+          "metadata": {
+            "channel": "Ayush Singh",
+            "view_count": 50768,
+            "like_count": 2801,
+            "comment_count": 120,
+            "like_ratio_pct": 5.52,
+            "published_at": "2026-03-16T14:30:54Z",
+            "description": "The \"Tutorial Hell\" trap is real. In 2026, being an AI Engineer who just knows how to call an API isn't enough\u2014that's the baseline."
+          }
+        },
+        {
+          "title": "\u8f6c\u884c AI \u5de5\u7a0b\u5e08\u534a\u5e74\u4e86\uff0c\u544a\u8bc9\u4f60 AI engineer \u5230\u5e95\u5728\u5e72\u561b",
+          "url": "https://www.youtube.com/watch?v=iEkbtgaeEmA",
+          "source": "youtube",
+          "metadata": {
+            "channel": "\u571f\u59b9\u571f\u59b9",
+            "view_count": 10260,
+            "like_count": 381,
+            "comment_count": 60,
+            "like_ratio_pct": 3.71,
+            "published_at": "2026-03-15T01:00:44Z",
+            "description": "\u5341\u51e0\u5e74Java \u540e\u7aef\u8001\u5175\u8f6c\u884cAI \u5de5\u7a0b\u5e08\u534a\u5e74\uff0c\u771f\u5b9e\u5de5\u4f5c\u5230\u5e95\u662f\u4ec0\u4e48\u6837\u7684\uff1f\u7b54\u6848\u53ef\u80fd\u8ddf\u4f60\u60f3\u7684\u5b8c\u5168\u4e0d\u540c\u3002 AI \u5de5\u7a0b\u5e08\u7684\u5206\u7c7b\uff1aApplied AI ..."
+          }
+        },
+        {
+          "title": "AI Learning Path  For 2026- Data Science, Generative and Agentic AI Roadmap",
+          "url": "https://www.youtube.com/watch?v=uaRKRE8oDZ4",
+          "source": "youtube",
+          "metadata": {
+            "channel": "Krish Naik",
+            "view_count": 38220,
+            "like_count": 1309,
+            "comment_count": 76,
+            "like_ratio_pct": 3.42,
+            "published_at": "2026-03-13T17:08:39Z",
+            "description": "Check out the roadmap: https://www.krishnaik.in/ai-roadmaps Just a day left The Wait Is Over \u2013 Learn AI the MODERN Way in ..."
+          }
+        },
+        {
+          "title": "Gemini Embeddings 2 - Why Every AI Engineer Needs to See This New Embedding Model",
+          "url": "https://www.youtube.com/watch?v=ActAeDq8L90",
+          "source": "youtube",
+          "metadata": {
+            "channel": "AI with Surya",
+            "view_count": 4322,
+            "like_count": 147,
+            "comment_count": 16,
+            "like_ratio_pct": 3.4,
+            "published_at": "2026-03-15T00:51:01Z",
+            "description": "Is RAG dead? Not quite \u2014 but the retrieval layer just got a massive upgrade. In this video, I break down Google's new Gemini ..."
+          }
+        },
+        {
+          "title": "AI Engineer VS Truck Driver #shorts #aiengineer #truckdriver #trending #viral",
+          "url": "https://www.youtube.com/watch?v=_VRmTtsNm6Q",
+          "source": "youtube",
+          "metadata": {
+            "channel": "Mr Skelo",
+            "view_count": 31639,
+            "like_count": 993,
+            "comment_count": 9,
+            "like_ratio_pct": 3.14,
+            "published_at": "2026-03-12T18:00:39Z",
+            "description": "AI Engineer VS Truck Driver #shorts #aiengineer #truckdriver #trending #viral."
+          }
+        },
+        {
+          "title": "Claude Code + Ollama = FREE UNLIMITED CODING (No API Key Required)",
+          "url": "https://www.youtube.com/watch?v=U2lHEAN21KY",
+          "source": "youtube",
+          "metadata": {
+            "channel": "AI with Hassan",
+            "view_count": 10683,
+            "like_count": 334,
+            "comment_count": 23,
+            "like_ratio_pct": 3.13,
+            "published_at": "2026-03-14T13:01:00Z",
+            "description": "Check out my website: aiwithhassan.com Claude Code Masterclass | Complete Setup, MCP Servers, Multi-Agent Systems ..."
+          }
+        },
+        {
+          "title": "Microsoft Free AI Training for 2026 High Paying Careers",
+          "url": "https://www.youtube.com/watch?v=yOAph6rg6q4",
+          "source": "youtube",
+          "metadata": {
+            "channel": "ssktechy",
+            "view_count": 18719,
+            "like_count": 565,
+            "comment_count": 5,
+            "like_ratio_pct": 3.02,
+            "published_at": "2026-03-13T14:01:39Z",
+            "description": "Collab & sponsorship enquiries: ssktechy@gmail.com Want to automate your business with AI? Visit our website ..."
+          }
+        },
+        {
+          "title": "From Unacademy learner to AI Engineer proof that consistent learning can rewrite your future. #jee",
+          "url": "https://www.youtube.com/watch?v=wOvAfCvMSK4",
+          "source": "youtube",
+          "metadata": {
+            "channel": "IITB Motivation",
+            "view_count": 27518,
+            "like_count": 482,
+            "comment_count": 2,
+            "like_ratio_pct": 1.75,
+            "published_at": "2026-03-13T16:12:11Z",
+            "description": "trending #iitjee."
+          }
+        }
+      ],
+      "source": "youtube",
+      "query": "AI Engineer",
+      "fetched_at": "2026-03-19 09:21:50.138215",
+      "error": null
+    },
+    "github": {
+      "results": [
+        {
+          "title": "Michaelliv/pi-generative-ui",
+          "url": "https://github.com/Michaelliv/pi-generative-ui",
+          "source": "github",
+          "metadata": {
+            "description": "Claude.ai's generative UI \u2014 reverse-engineered, rebuilt for pi. Interactive HTML/SVG widgets in native macOS windows.",
+            "stars": 730,
+            "forks": 40,
+            "open_issues": 1,
+            "stars_per_day": 121.7,
+            "language": "TypeScript",
+            "topics": [],
+            "license": "",
+            "created_at": "2026-03-12T22:43:50Z",
+            "updated_at": "2026-03-19T09:13:40Z"
+          }
+        },
+        {
+          "title": "patchy631/ai-engineering-hub",
+          "url": "https://github.com/patchy631/ai-engineering-hub",
+          "source": "github",
+          "metadata": {
+            "description": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications.",
+            "stars": 32285,
+            "forks": 5326,
+            "open_issues": 123,
+            "stars_per_day": 62.9,
+            "language": "Jupyter Notebook",
+            "topics": [
+              "agents",
+              "ai",
+              "llms",
+              "machine-learning",
+              "mcp",
+              "rag"
+            ],
+            "license": "MIT",
+            "created_at": "2024-10-21T10:43:24Z",
+            "updated_at": "2026-03-19T07:58:19Z"
+          }
+        },
+        {
+          "title": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro",
+          "source": "github",
+          "metadata": {
+            "description": "Context engineering is the new vibe coding - it's the way to actually make AI coding assistants work. Claude Code is the best for this so that's what this repo is centered around, but you can apply this strategy with any AI coding assistant!",
+            "stars": 12819,
+            "forks": 2660,
+            "open_issues": 33,
+            "stars_per_day": 49.5,
+            "language": "Python",
+            "topics": [],
+            "license": "MIT",
+            "created_at": "2025-07-02T11:54:47Z",
+            "updated_at": "2026-03-19T06:46:49Z"
+          }
+        },
+        {
+          "title": "alexeygrigorev/ai-engineering-field-guide",
+          "url": "https://github.com/alexeygrigorev/ai-engineering-field-guide",
+          "source": "github",
+          "metadata": {
+            "description": "Research into AI engineering interview assignments, take-home challenges, and hiring practices from Q4 2025 / Q1 2026",
+            "stars": 1240,
+            "forks": 137,
+            "open_issues": 1,
+            "stars_per_day": 29.5,
+            "language": "HTML",
+            "topics": [],
+            "license": "",
+            "created_at": "2026-02-04T14:17:07Z",
+            "updated_at": "2026-03-19T08:55:17Z"
+          }
+        },
+        {
+          "title": "FullAgent/fulling",
+          "url": "https://github.com/FullAgent/fulling",
+          "source": "github",
+          "metadata": {
+            "description": "Fulling is an AI-powered Full-stack Engineer Agent. Built with Next.js, Claude, shadcn/ui, and PostgreSQL. Use kubernetes as infra.",
+            "stars": 2388,
+            "forks": 223,
+            "open_issues": 4,
+            "stars_per_day": 15.0,
+            "language": "TypeScript",
+            "topics": [
+              "ai-agent",
+              "claude",
+              "claude-code",
+              "docker",
+              "kubernetes",
+              "llm",
+              "nextjs",
+              "pgsql",
+              "postgresql",
+              "prisma"
+            ],
+            "license": "MIT",
+            "created_at": "2025-10-11T02:31:07Z",
+            "updated_at": "2026-03-19T06:42:12Z"
+          }
+        },
+        {
+          "title": "onvoyage-ai/gtm-engineer-skills",
+          "url": "https://github.com/onvoyage-ai/gtm-engineer-skills",
+          "source": "github",
+          "metadata": {
+            "description": "Claude Code skill for improving website AEO (AI Engine Optimization) and GEO (Generative Engine Optimization) scores \u2014 16 foundational checks, 6 intelligence dimensions, framework-specific fixes",
+            "stars": 290,
+            "forks": 5,
+            "open_issues": 7,
+            "stars_per_day": 13.8,
+            "language": "HTML",
+            "topics": [
+              "aeo",
+              "ai-optimization",
+              "claude-code",
+              "geo",
+              "llms-txt",
+              "seo",
+              "structured-data"
+            ],
+            "license": "MIT",
+            "created_at": "2026-02-26T02:33:35Z",
+            "updated_at": "2026-03-19T06:05:48Z"
+          }
+        },
+        {
+          "title": "deepset-ai/haystack",
+          "url": "https://github.com/deepset-ai/haystack",
+          "source": "github",
+          "metadata": {
+            "description": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.",
+            "stars": 24554,
+            "forks": 2667,
+            "open_issues": 105,
+            "stars_per_day": 10.6,
+            "language": "MDX",
+            "topics": [
+              "agent",
+              "agents",
+              "ai",
+              "gemini",
+              "generative-ai",
+              "gpt-4",
+              "information-retrieval",
+              "large-language-models",
+              "llm",
+              "machine-learning"
+            ],
+            "license": "Apache-2.0",
+            "created_at": "2019-11-14T09:05:28Z",
+            "updated_at": "2026-03-19T08:52:55Z"
+          }
+        },
+        {
+          "title": "stas00/ml-engineering",
+          "url": "https://github.com/stas00/ml-engineering",
+          "source": "github",
+          "metadata": {
+            "description": "Machine Learning Engineering Open Book",
+            "stars": 17447,
+            "forks": 1107,
+            "open_issues": 1,
+            "stars_per_day": 8.6,
+            "language": "Python",
+            "topics": [
+              "ai",
+              "debugging",
+              "gpus",
+              "inference",
+              "large-language-models",
+              "llm",
+              "machine-learning",
+              "machine-learning-engineering",
+              "mlops",
+              "network"
+            ],
+            "license": "CC-BY-SA-4.0",
+            "created_at": "2020-09-02T19:23:01Z",
+            "updated_at": "2026-03-19T09:08:33Z"
+          }
+        },
+        {
+          "title": "kalil0321/reverse-api-engineer",
+          "url": "https://github.com/kalil0321/reverse-api-engineer",
+          "source": "github",
+          "metadata": {
+            "description": "Claude engineer that captures traffic, writes documentation and automatically generates API clients. Reverse engineer APIs!",
+            "stars": 495,
+            "forks": 40,
+            "open_issues": 0,
+            "stars_per_day": 5.8,
+            "language": "Python",
+            "topics": [
+              "ai",
+              "ai-agents",
+              "claude-code",
+              "har",
+              "llm",
+              "playwright",
+              "scraping"
+            ],
+            "license": "MIT",
+            "created_at": "2025-12-23T14:04:45Z",
+            "updated_at": "2026-03-19T02:07:06Z"
+          }
+        },
+        {
+          "title": "NeoLabHQ/context-engineering-kit",
+          "url": "https://github.com/NeoLabHQ/context-engineering-kit",
+          "source": "github",
+          "metadata": {
+            "description": "Hand-crafted Claude Code Skills focused on improving agent results quality. Compatible with OpenCode, Cursor, Antigravity, Gemini CLI, and others.",
+            "stars": 662,
+            "forks": 58,
+            "open_issues": 5,
+            "stars_per_day": 5.3,
+            "language": "TypeScript",
+            "topics": [
+              "agent",
+              "ai",
+              "claude",
+              "cline",
+              "cursor",
+              "llm",
+              "marketplace",
+              "opencode",
+              "windsurf"
+            ],
+            "license": "GPL-3.0",
+            "created_at": "2025-11-13T23:23:04Z",
+            "updated_at": "2026-03-19T02:38:00Z"
+          }
+        }
+      ],
+      "source": "github",
+      "query": "AI Engineer",
+      "fetched_at": "2026-03-19 09:21:48.843151",
+      "error": null
+    },
+    "google_linkedin": {
+      "results": [
+        {
+          "title": "Top trending Linkedin posts about ai",
+          "url": "https://taplio.com/trending/ai",
+          "source": "google_linkedin",
+          "metadata": {
+            "author": "Conor Grennan",
+            "engagement_type": "opinion",
+            "key_takeaway": "The cloud war between MS Azure, Google Cloud and AWS is worth billions and it's only going to get bigger due to AI investments.",
+            "summary": "AI competition is driving a cloud and chip war, with companies like Amazon, Microsoft, and Google investing heavily in AI and related infrastructure, creating a virtuous cycle of growth for their cloud businesses."
+          }
+        },
+        {
+          "title": "Fastest-Growing AI Jobs in the US: LinkedIn Report",
+          "url": "https://www.findarticles.com/fastest-growing-ai-jobs-in-the-us-linkedin-report/",
+          "source": "google_linkedin",
+          "metadata": {
+            "author": "LinkedIn",
+            "engagement_type": "data-driven",
+            "key_takeaway": "AI Engineer and Machine Learning Engineer roles are the fastest-growing jobs, requiring skills like LangChain, Retrieval-Augmented Generation, and PyTorch.",
+            "summary": "LinkedIn's Jobs on the Rise 2026 report indicates a surge in AI-related roles, with AI Engineer at the top, emphasizing the demand for professionals who can build, deploy, and operationalize AI solutions."
+          }
+        },
+        {
+          "title": "Need a new job? These AI roles are the fastest growing in the US, says LinkedIn",
+          "url": "https://www.zdnet.com/article/fastest-growing-ai-jobs-in-the-us-linkedin/",
+          "source": "google_linkedin",
+          "metadata": {
+            "author": "Lance Whitney (ZDNET)",
+            "engagement_type": "news-reaction",
+            "key_takeaway": "AI engineer is the #1 fastest-growing job on LinkedIn, requiring skills in LangChain, RAG, and PyTorch, with common backgrounds in software engineering, data science, and full stack engineering.",
+            "summary": "A ZDNET article, referencing a LinkedIn report, highlights AI Engineer as the fastest-growing job, noting the increasing demand for AI skills across various industries and the importance of experience with specific AI tools and technologies."
+          }
+        },
+        {
+          "title": "AI engineer is the #1 fastest-growing job on LinkedIn",
+          "url": "https://www.ohiotechnews.com/ai-engineer-fastest-growing-job-linkedin-saras/",
+          "source": "google_linkedin",
+          "metadata": {
+            "author": "Ohio Tech News",
+            "engagement_type": "news-reaction",
+            "key_takeaway": "AI engineering is the #1 fastest-growing job, with salaries reaching $350k, and companies are seeking candidates with experience building real-world AI projects.",
+            "summary": "Ohio Tech News reports AI Engineering as the fastest-growing job on LinkedIn, emphasizing the high demand and lucrative salaries, while highlighting the importance of practical experience and specialized knowledge in LLMs, RAG, and PyTorch."
+          }
+        },
+        {
+          "title": "I Asked Frontier AI Models to Solve a Simple Programming Problem. They All Failed.",
+          "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1rxq6m3/i_asked_frontier_ai_models_to_solve_a_simple/",
+          "source": "google_linkedin",
+          "metadata": {
+            "author": "pelicanthief",
+            "engagement_type": "contrarian",
+            "key_takeaway": "Despite the hype, AI models still struggle with simple programming problems, raising concerns about the 'AI-first' development approach and developer layoffs.",
+            "summary": "A post discussing the limitations of AI in coding, arguing that despite advancements, AI still fails at basic programming tasks, questioning the current trend of AI-first development and its impact on developers."
+          }
+        },
+        {
+          "title": "Every AI News Story You Missed Last Week",
+          "url": "https://www.youtube.com/watch?v=AMKRJqQv7as",
+          "source": "google_linkedin",
+          "metadata": {
+            "author": "Ryan and Matt Data Science (YouTube)",
+            "engagement_type": "news-reaction",
+            "key_takeaway": "Google released Gemini Embedding 2, a multimodal embedding model, and Anthropic launched Claude Code Review to catch bugs in AI-generated code.",
+            "summary": "A YouTube summary of AI news highlights Google's Gemini Embedding 2 and Anthropic's Claude Code Review, reflecting advancements in AI capabilities and tools for code quality assurance."
+          }
+        },
+        {
+          "title": "It's not just you \u2014 LinkedIn is being flooded by awful AI-generated posts, and tech workers are particularly bad at it",
+          "url": "https://www.techradar.com/pro/its-not-just-you-linkedin-is-being-flooded-by-awful-ai-generated-posts-and-tech-workers-are-particularly-bad-at-it",
+          "source": "google_linkedin",
+          "metadata": {
+            "author": "TechRadar",
+            "engagement_type": "opinion",
+            "key_takeaway": "AI-generated content is increasing on LinkedIn, with finance and technology sectors leading in AI usage, but industries relying on trust show lower adoption.",
+            "summary": "TechRadar reports a rise in AI-generated posts on LinkedIn, particularly in finance and technology, while industries emphasizing personal interaction are more cautious in adopting AI for content creation."
+          }
+        }
+      ],
+      "source": "google_linkedin",
+      "query": "AI Engineer",
+      "fetched_at": "2026-03-19 09:22:03.866923",
+      "error": null
+    },
+    "reddit": {
+      "results": [
+        {
+          "title": "AI is completely useless for actual engineering and the hype is exhausting.",
+          "url": "https://www.reddit.com/r/EngineeringStudents/comments/1rws47w/ai_is_completely_useless_for_actual_engineering/",
+          "source": "reddit",
+          "metadata": {
+            "score": 1002,
+            "num_comments": 150,
+            "upvote_ratio": 0.94,
+            "subreddit": "EngineeringStudents",
+            "author": "Onigirii_sama",
+            "created_utc": "2026-03-18T02:55:20+00:00",
+            "selftext": "I just finished my mechanical engineering degree and I\u2019m already over the \"AI is the future\" talk. Every tech guru online acts like AI is going to design the world, but if you actually try using it for real physics, it\u2019s a disaster.\n\nI\u2019ve tried using the latest models for simple stuff like gear calc"
+          }
+        },
+        {
+          "title": "Google Engineers Launch \"Sashiko\" For Agentic AI Code Review Of The Linux Kernel",
+          "url": "https://www.reddit.com/r/linux/comments/1rx59y5/google_engineers_launch_sashiko_for_agentic_ai/",
+          "source": "reddit",
+          "metadata": {
+            "score": 256,
+            "num_comments": 103,
+            "upvote_ratio": 0.89,
+            "subreddit": "linux",
+            "author": "anh0516",
+            "created_utc": "2026-03-18T14:22:56+00:00",
+            "selftext": ""
+          }
+        },
+        {
+          "title": "AI is hurting software engineering OE",
+          "url": "https://www.reddit.com/r/overemployed/comments/1rwg7j3/ai_is_hurting_software_engineering_oe/",
+          "source": "reddit",
+          "metadata": {
+            "score": 251,
+            "num_comments": 173,
+            "upvote_ratio": 0.85,
+            "subreddit": "overemployed",
+            "author": "c4ndybar",
+            "created_utc": "2026-03-17T19:12:12+00:00",
+            "selftext": "It used to be the case that a good software engineer could outproduce a mediocre engineer by an order of magnitude.  These AI tools are getting so good that even mediocre engineers can pump out code quickly.\n\nJobs are starting to expect high velocity from everyone, not just top performers. We are al"
+          }
+        },
+        {
+          "title": "Stop being a free QA Engineer for your AI!",
+          "url": "https://www.reddit.com/r/PromptEngineering/comments/1rwezio/stop_being_a_free_qa_engineer_for_your_ai/",
+          "source": "reddit",
+          "metadata": {
+            "score": 97,
+            "num_comments": 33,
+            "upvote_ratio": 0.82,
+            "subreddit": "PromptEngineering",
+            "author": "hemkelhemfodul",
+            "created_utc": "2026-03-17T18:30:38+00:00",
+            "selftext": "I\u2019m done. I\u2019m officially tired of telling AI \"there's an error here\" or \"this padding is off.\" I realized I spent more time testing its hallucinations than actually building my project. I was basically its unpaid Tester.\n\nNow, I use a \"Zero-Testing Policy\" prompt that changed the game. Before it spi"
+          }
+        },
+        {
+          "title": "Inside Mastercard\u2019s new gen AI engine",
+          "url": "https://www.reddit.com/r/BuyFromEU/comments/1rx999x/inside_mastercards_new_gen_ai_engine/",
+          "source": "reddit",
+          "metadata": {
+            "score": 50,
+            "num_comments": 2,
+            "upvote_ratio": 0.91,
+            "subreddit": "BuyFromEU",
+            "author": "Efficient_System_292",
+            "created_utc": "2026-03-18T16:52:01+00:00",
+            "selftext": "This is why we need an alternative from the eu:\n\n\u201eWe are training the latest version of our LTM on billions of anonymized transactions. Our plan is to ramp up this work to include hundreds of billions of payments transactions, as well as additional types of datasets, including merchant location data"
+          }
+        },
+        {
+          "title": "[Hiring] - CV / software engineer/ AI engineer",
+          "url": "https://www.reddit.com/r/DeveloperJobs/comments/1rw49zs/hiring_cv_software_engineer_ai_engineer/",
+          "source": "reddit",
+          "metadata": {
+            "score": 14,
+            "num_comments": 13,
+            "upvote_ratio": 0.9,
+            "subreddit": "DeveloperJobs",
+            "author": "psycogtech",
+            "created_utc": "2026-03-17T11:48:18+00:00",
+            "selftext": "I\u2019m working for a client (animal industry) , they\u2019re looking to grow their team internationally, based in EU. I need a profile with extremely good experience in CV and also uses AI tools. Apart from that they should also be a mix of AI engineer as well and devops / systems architect. It\u2019s a difficul"
+          }
+        },
+        {
+          "title": "Are AI engineers \u201csafer\u201d",
+          "url": "https://www.reddit.com/r/cscareerquestions/comments/1rx2g83/are_ai_engineers_safer/",
+          "source": "reddit",
+          "metadata": {
+            "score": 12,
+            "num_comments": 56,
+            "upvote_ratio": 0.6,
+            "subreddit": "cscareerquestions",
+            "author": "phy2go",
+            "created_utc": "2026-03-18T12:24:54+00:00",
+            "selftext": "Been applying to ai engineering roles, but now im wondering how much life span these sorts of roles have. Once the ai bubble pops\u2026aren\u2019t ai engineers going to experience massive layoffs?\n\nMaybe even more drastic layoffs compared to SWE\u2019s. It\u2019s hard to predict the future but I\u2019m wondering how everyon"
+          }
+        }
+      ],
+      "source": "reddit",
+      "query": "AI Engineer",
+      "fetched_at": "2026-03-19 09:21:48.878267",
+      "error": null
+    },
+    "rss": {
+      "results": [
+        {
+          "title": "Multiverse Computing pushes its compressed AI models into the mainstream",
+          "url": "https://techcrunch.com/2026/03/19/multiverse-computing-pushes-its-compressed-ai-models-into-the-mainstream/",
+          "source": "rss",
+          "metadata": {
+            "publication": "TechCrunch",
+            "published_date": "2026-03-19T08:00:00+00:00",
+            "summary": "After compressing models from major AI labs including OpenAI, Meta, DeepSeek and Mistral AI, Multiverse Computing has launched both an app that showcases the capabilities of its compressed models and an API that makes them more widely available.",
+            "relevance_score": 9.99,
+            "categories": [
+              "AI",
+              "ai models",
+              "multiverse computing",
+              "compactifAI"
+            ]
+          }
+        },
+        {
+          "title": "Meta is having trouble with rogue AI agents",
+          "url": "https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/",
+          "source": "rss",
+          "metadata": {
+            "publication": "TechCrunch",
+            "published_date": "2026-03-18T23:42:46+00:00",
+            "summary": "A rogue AI agent inadvertently exposed Meta company and user data to engineers who didn't have permission to see it.",
+            "relevance_score": 2.06,
+            "categories": [
+              "AI",
+              "agentic ai",
+              "In Brief",
+              "Meta",
+              "openclaw"
+            ]
+          }
+        },
+        {
+          "title": "Kagi Translate's AI answers the question \"What would horny Margaret Thatcher say?\"",
+          "url": "https://arstechnica.com/ai/2026/03/kagi-translates-ai-answers-the-question-what-would-horny-margaret-thatcher-say/",
+          "source": "rss",
+          "metadata": {
+            "publication": "Ars Technica",
+            "published_date": "2026-03-18T22:06:32+00:00",
+            "summary": "Remember when it was fun to play around with LLMs?",
+            "relevance_score": 1.87,
+            "categories": [
+              "AI",
+              "Google Translate",
+              "kagi",
+              "large language models",
+              "LLMs"
+            ]
+          }
+        },
+        {
+          "title": "Measuring Catastrophic Forgetting in AI",
+          "url": "https://hackernoon.com/measuring-catastrophic-forgetting-in-ai?source=rss",
+          "source": "rss",
+          "metadata": {
+            "publication": "Hacker Noon",
+            "published_date": "2026-03-18T22:00:17+00:00",
+            "summary": "Catastrophic forgetting occurs when neural networks lose previously learned knowledge while acquiring new tasks. This section outlines three core ways to measure it: retention (performance drop on old tasks), relearning (speed of reacquisition), and activation overlap (shared internal representations). Together, these metrics provide complementary views into how and why AI systems forget, bridging insights from psychology and modern machine learning.",
+            "relevance_score": 1.86,
+            "categories": [
+              "ai-model-stability",
+              "catastrophic-forgetting",
+              "neural-networks-memory-loss",
+              "continual-learning-ai",
+              "ai-training"
+            ]
+          }
+        },
+        {
+          "title": "Nothing CEO Carl Pei says smartphone apps will disappear as AI agents take their place",
+          "url": "https://techcrunch.com/2026/03/18/nothing-ceo-carl-pei-says-smartphone-apps-will-disappear-as-ai-agents-take-their-place/",
+          "source": "rss",
+          "metadata": {
+            "publication": "TechCrunch",
+            "published_date": "2026-03-18T20:30:52+00:00",
+            "summary": "Nothing CEO Carl Pei says AI agents will eventually replace apps, shifting smartphones toward systems that understand intent and act on a user's behalf.",
+            "relevance_score": 1.73,
+            "categories": [
+              "AI",
+              "Apps",
+              "Hardware",
+              "AI agents",
+              "Carl Pei"
+            ]
+          }
+        },
+        {
+          "title": "Pardoned Nikola founder Trevor Milton is trying to raise $1B for AI-powered planes",
+          "url": "https://techcrunch.com/2026/03/18/pardoned-nikola-founder-trevor-milton-is-trying-to-raise-1b-for-ai-powered-planes/",
+          "source": "rss",
+          "metadata": {
+            "publication": "TechCrunch",
+            "published_date": "2026-03-18T17:58:28+00:00",
+            "summary": "He told the Wall Street Journal he thinks autonomous planes will be \"10 times harder than Nikola ever was.\"",
+            "relevance_score": 1.57,
+            "categories": [
+              "Transportation",
+              "autonomous vehicles",
+              "aviation",
+              "Nikola",
+              "In Brief"
+            ]
+          }
+        },
+        {
+          "title": "Patreon CEO calls AI companies\u2019 fair use argument \u2018bogus,\u2019 says creators should be paid",
+          "url": "https://techcrunch.com/2026/03/18/patreon-ceo-calls-ai-companies-fair-use-argument-bogus-says-creators-should-be-paid/",
+          "source": "rss",
+          "metadata": {
+            "publication": "TechCrunch",
+            "published_date": "2026-03-18T17:54:31+00:00",
+            "summary": "Patreon CEO Jack Conte says AI companies should pay creators for training data, arguing their fair use defense falls apart when they license content from major publishers.",
+            "relevance_score": 1.57,
+            "categories": [
+              "AI",
+              "Commerce",
+              "Media & Entertainment",
+              "Creators",
+              "Patreon"
+            ]
+          }
+        },
+        {
+          "title": "Rebel Audio is a new AI podcasting tool aimed at first-time creators",
+          "url": "https://techcrunch.com/2026/03/18/rebel-audio-is-a-new-ai-podcasting-tool-aimed-at-first-time-creators/",
+          "source": "rss",
+          "metadata": {
+            "publication": "TechCrunch",
+            "published_date": "2026-03-18T17:15:00+00:00",
+            "summary": "Rebel Audio is a new all-in-one podcasting tool that allows creators to record podcasts, edit, clip content for social, and publish episodes, all without ever leaving the platform.",
+            "relevance_score": 1.53,
+            "categories": [
+              "AI",
+              "Apps",
+              "Media & Entertainment",
+              "Startups",
+              "seed funding"
+            ]
+          }
+        },
+        {
+          "title": "The HackerNoon Newsletter: How to Deploy Your Own 24/7 AI Agent with\u00a0OpenClaw (3/18/2026)",
+          "url": "https://hackernoon.com/3-18-2026-newsletter?source=rss",
+          "source": "rss",
+          "metadata": {
+            "publication": "Hacker Noon",
+            "published_date": "2026-03-18T16:03:18+00:00",
+            "summary": "<p><strong>How are you, hacker?</strong></p>\n        <br />\n        <p>\ud83e\ude90 What\u2019s happening in tech today, March 18, 2026?</p>\n        <br />\n        <p>\n          The\n          <a href=\"https://hackernoon.com/noonification\" rel=\"noopener\" target=\"_blank\"> HackerNoon Newsletter</a>\n          brings the HackerNoon \n          <a href=\"https://hackernoon.com\" rel=\"noopener\" target=\"_blank\">homepage</a>\n          straight to your inbox.\n          <a href=\"https://hackernoon.com/on-this-day\" rel=\"noope",
+            "relevance_score": 1.48,
+            "categories": [
+              "hackernoon-newsletter",
+              "noonification",
+              "latest-tect-stories",
+              "vibe-coding",
+              "ai-model-stability"
+            ]
+          }
+        },
+        {
+          "title": "Microsoft hires the team of Sequoia-backed AI collaboration platform, Cove",
+          "url": "https://techcrunch.com/2026/03/18/microsoft-hires-the-team-of-sequioa-backed-ai-collaboration-platform-cove/",
+          "source": "rss",
+          "metadata": {
+            "publication": "TechCrunch",
+            "published_date": "2026-03-18T15:33:49+00:00",
+            "summary": "AI collaboration startup Cove is shutting down after its team joined Microsoft, with service ending April 1 and customer data set for deletion.",
+            "relevance_score": 1.46,
+            "categories": [
+              "AI",
+              "Apps",
+              "Startups",
+              "collaboration",
+              "Microsoft"
+            ]
+          }
+        }
+      ],
+      "source": "rss",
+      "query": "AI Engineer",
+      "fetched_at": "2026-03-19 09:21:49.071510",
+      "error": null
+    },
+    "google_news": {
+      "results": [
+        {
+          "title": "Founder fires top engineer after AI-built feature raised data security concerns: \u2018He was terminated within the hour\u2019 - Hindustan Times",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQWEMtZDVNNE9kczV5T252NWZkY1lHUXQ0N0pnWW8zUEg4ZTJXMHp4NmRqS1QzMXk2Q1NVXzdZY3RWak9QVmF1TXZRV1RmMldFMkc4ajh5ZTlFMmh3XzhJSVVWX1FzSm9rZUhNS3NRRUNuZUJWVVpROFFnRzFOQ0dXYkM1Q0RVQTNYaFFvWWRhbG1TR1VRMmg1bmR4OXdjVG92SDBmd2lPX3pzWGxTN2J3YjFoeXZneHJSXzdpU2JjQk5KMG5wQUpDRlVQMGRsQmZJbHNsY3FnSkhfS1VNQ0dScUgwOUx1SkgzSTRsR1FtNE9IWE5FdXpUM3J5Q2Q?oc=5",
+          "source": "google_news",
+          "metadata": {
+            "publication": "Hindustan Times",
+            "published_date": "2026-03-19T06:42:10+00:00",
+            "summary": "<a href=\"https://news.google.com/rss/articles/CBMi_AFBVV95cUxQWEMtZDVNNE9kczV5T252NWZkY1lHUXQ0N0pnWW8zUEg4ZTJXMHp4NmRqS1QzMXk2Q1NVXzdZY3RWak9QVmF1TXZRV1RmMldFMkc4ajh5ZTlFMmh3XzhJSVVWX1FzSm9rZUhNS3NRRUNuZUJWVVpROFFnRzFOQ0dXYkM1Q0RVQTNYaFFvWWRhbG1TR1VRMmg1bmR4OXdjVG92SDBmd2lPX3pzWGxTN2J3YjFoeXZneHJSXzdpU2JjQk5KMG5wQUpDRlVQMGRsQmZJbHNsY3FnSkhfS1VNQ0dScUgwOUx1SkgzSTRsR1FtNE9IWE5FdXpUM3J5Q2Q?oc=5\" target=\"_blank\">Founder fires top engineer after AI-built feature raised data security concerns: \u2018He was",
+            "relevance_score": 14.63
+          }
+        },
+        {
+          "title": "Meta's sensitive information leaked to employees after engineer seeks AI agent who goes rogue - The Times of India",
+          "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPV09pN1V1aUs5NnBicFBHejA1X2V3OVZVeEVTY2sxLTU5TEdYWkoxOWM4RFVOZ0FRN0k2N3dVTHdkSXFINGdwNWxvcFUyVkI3S1hxOFJIZ2syX2ZkRTVLdmVzRjRzb2NZaHdFTC1pbkwyVE5ib3oxejY4RTZfSnNuNHVmNDRJUGlfUXkxelFnSVE2RWlGaVJvQUhoVG1VRDVZcDdBTnRkQkdOT3R2VHZ5TjdIZ0JpN3hqOHd2MVlDaDZLbEJNcmN1dE43YkJTMTg1aVJnQU1jc1QwOGV6cC1Mb0RSdUJ2ZUllMUdreHVKUUdjVkpXZV9IVXhqTjYxeUxGbko4THhR0gGLAkFVX3lxTE1lczl1V29ON1k4REpMVWZRMkpXUXRmUUJ2OVNQZ2t5bkxVTkxsQ3M5Z2NTSjNLdjVyMW1KSVY3Ull5ZUUyZ3YxN0Zqb2ExWWxGNG9HckFkbWUwRlNVWlVsclFoZkY1Yi1fWVFqWEdJejlIX25vSEcwek1GaXFqQW5mdm5YQ2RLdkpPOHB0enNWZllJZkcybkdnSFk1T3VQTW04R193TkJYVE0tcjBzaG53bHRSV085MFJ3dlltaGRlNmNNX0lLSnJlbmQyaWJfbFczai1VckgtWDBycXZEaGhGUkpfeDBZc0VVeHplTXBreGNsVHJ3dnR0TEZSSm1QajJOMnM4akZLX2hDaw?oc=5",
+          "source": "google_news",
+          "metadata": {
+            "publication": "The Times of India",
+            "published_date": "2026-03-19T04:50:00+00:00",
+            "summary": "<a href=\"https://news.google.com/rss/articles/CBMihgJBVV95cUxPV09pN1V1aUs5NnBicFBHejA1X2V3OVZVeEVTY2sxLTU5TEdYWkoxOWM4RFVOZ0FRN0k2N3dVTHdkSXFINGdwNWxvcFUyVkI3S1hxOFJIZ2syX2ZkRTVLdmVzRjRzb2NZaHdFTC1pbkwyVE5ib3oxejY4RTZfSnNuNHVmNDRJUGlfUXkxelFnSVE2RWlGaVJvQUhoVG1VRDVZcDdBTnRkQkdOT3R2VHZ5TjdIZ0JpN3hqOHd2MVlDaDZLbEJNcmN1dE43YkJTMTg1aVJnQU1jc1QwOGV6cC1Mb0RSdUJ2ZUllMUdreHVKUUdjVkpXZV9IVXhqTjYxeUxGbko4THhR0gGLAkFVX3lxTE1lczl1V29ON1k4REpMVWZRMkpXUXRmUUJ2OVNQZ2t5bkxVTkxsQ3M5Z2NTSjNLdjVyMW1KSVY3Ull5ZUUyZ3",
+            "relevance_score": 9.42
+          }
+        },
+        {
+          "title": "Google launches free AI and cloud courses: Learn LLMs, image generation, and cloud engineering - The Times of India",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQQ3M1QzRwbTVjQ01LeldOamlERFRnVHVOblluVUc1QWYyX2hPUndWcnZPZlNFR3NIdFo3ekIzVDZiekQySmk4ZWJpeG5aR2tQNEdqWDB1MC1MZURMeGt1ZDdPNElUemp1Mi1XYnJ2Y0FEMVBlTzhYYmdlMVd6LWIzdlBTSXItdzBrN1pnQWhfVll0V19wUDE0WmJxWWFnZVB6QVdRNUZXZFpQemd0STRhZmNJVWlIRUF2OVZpZ1UtbnMzZHJxZVZHaHFIbGYxd1hWalB1OXVQMlMxZk01VTdZaHZ4M3hZaFViUzhuX2Z0TG5RZ0o4MllrbU5OaTLSAYICQVVfeXFMT1BEejEyTXZNMm1LbGRhSDJIYnVjcWFfMUNtbjYzU3ozWmROUzJxUFN5OHphSXpucVZMYU1xbWd0UU9pQTJTS2JVREMtNkhmNkZtNnNmSWwzZGMzT2R5d1Q3M2RVYkh5WjBlVjMxb1JGam9FalIxSFFoalJsZkVvOF9ndFU2MWJXMHBhNS1pVWpTaVVqWV8tYnBqbHRmblhCSTEzTmJVYklBbFY4RzlIcWlsLWJISUZCY09OVm9QbmJyT3U2RlN6YlNqM2ZvYXJTaDI5RTlGRUkxcGpfR25FcUNJYU9famp4Tjd6bHB2WGtXXzg2RGJWcXR2THZmWFhkRVN3?oc=5",
+          "source": "google_news",
+          "metadata": {
+            "publication": "The Times of India",
+            "published_date": "2026-03-19T07:53:00+00:00",
+            "summary": "<a href=\"https://news.google.com/rss/articles/CBMi_AFBVV95cUxQQ3M1QzRwbTVjQ01LeldOamlERFRnVHVOblluVUc1QWYyX2hPUndWcnZPZlNFR3NIdFo3ekIzVDZiekQySmk4ZWJpeG5aR2tQNEdqWDB1MC1MZURMeGt1ZDdPNElUemp1Mi1XYnJ2Y0FEMVBlTzhYYmdlMVd6LWIzdlBTSXItdzBrN1pnQWhfVll0V19wUDE0WmJxWWFnZVB6QVdRNUZXZFpQemd0STRhZmNJVWlIRUF2OVZpZ1UtbnMzZHJxZVZHaHFIbGYxd1hWalB1OXVQMlMxZk01VTdZaHZ4M3hZaFViUzhuX2Z0TG5RZ0o4MllrbU5OaTLSAYICQVVfeXFMT1BEejEyTXZNMm1LbGRhSDJIYnVjcWFfMUNtbjYzU3ozWmROUzJxUFN5OHphSXpucVZMYU1xbWd0UU9pQTJTS2JVREMtNkhmNk",
+            "relevance_score": 9.26
+          }
+        },
+        {
+          "title": "McLaren adopts AI engineering platform to accelerate design - The Engineer",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQWHlBZTd5WWJvZlBXWkFOMXhUbHVCeE9GMmJtWks4MXh4Y05NZG9NVG8wYXF4eklGcnIxdGozSzlXVGFXemktcWw1dzcxNWJoRVpPMVg5TUZCbTdZWUNuV2xKWWkxUXNXeENlTU5veFlMTER5SVpSLTlnclFLeERpa3dGWmtBSFg2eG1zNnQxeU05VXZqaDVESVNpNXl2dw?oc=5",
+          "source": "google_news",
+          "metadata": {
+            "publication": "The Engineer",
+            "published_date": "2026-03-18T09:41:13+00:00",
+            "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxQWHlBZTd5WWJvZlBXWkFOMXhUbHVCeE9GMmJtWks4MXh4Y05NZG9NVG8wYXF4eklGcnIxdGozSzlXVGFXemktcWw1dzcxNWJoRVpPMVg5TUZCbTdZWUNuV2xKWWkxUXNXeENlTU5veFlMTER5SVpSLTlnclFLeERpa3dGWmtBSFg2eG1zNnQxeU05VXZqaDVESVNpNXl2dw?oc=5\" target=\"_blank\">McLaren adopts AI engineering platform to accelerate design</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Engineer</font>",
+            "relevance_score": 5.13
+          }
+        },
+        {
+          "title": "Who is Aman Gottumukkala, Indian-origin AI engineer how has joined xAI; receives 'welcome message' from CEO Elon Musk - MSN",
+          "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNTER3S0VaOE9VWmRMYWE0WFJZcVN5SnRWVVlZMm1TdnhFajZkdEhCTnE1YVFFVVVLWXlrNnNsbUhibGVrNWNrdVNoSDhra0xhc0k3OW9zeHMwWGdDWERQZ0cwX01sUXdFNlVFa1Rodm9zTnV3YzlFUzhsVjAtY1dOeEk2Q0lnX1NBdjZGODNucUtseDNxcFZRZVIybTl5UU5nWFRmTmd0RlVSeGNlOVNyUThRSGQwTWRoQXpoSWVHS21BR0VpbE5ob0VraXRHV21iU2tBTkx1YndXQ01CWGNpQjNEeG02VnkwWlN2NE5GbUxjMC1FTWUwM2xlendCc0xJWVpnc2ZRTi1UT0NqZVpZTzJtVGxEU2N3RzgxR0thdkJuUm1NUlN3UVFSSmRYMUhGNnAyVGJB?oc=5",
+          "source": "google_news",
+          "metadata": {
+            "publication": "MSN",
+            "published_date": "2026-03-18T09:22:44+00:00",
+            "summary": "<a href=\"https://news.google.com/rss/articles/CBMitgJBVV95cUxNTER3S0VaOE9VWmRMYWE0WFJZcVN5SnRWVVlZMm1TdnhFajZkdEhCTnE1YVFFVVVLWXlrNnNsbUhibGVrNWNrdVNoSDhra0xhc0k3OW9zeHMwWGdDWERQZ0cwX01sUXdFNlVFa1Rodm9zTnV3YzlFUzhsVjAtY1dOeEk2Q0lnX1NBdjZGODNucUtseDNxcFZRZVIybTl5UU5nWFRmTmd0RlVSeGNlOVNyUThRSGQwTWRoQXpoSWVHS21BR0VpbE5ob0VraXRHV21iU2tBTkx1YndXQ01CWGNpQjNEeG02VnkwWlN2NE5GbUxjMC1FTWUwM2xlendCc0xJWVpnc2ZRTi1UT0NqZVpZTzJtVGxEU2N3RzgxR0thdkJuUm1NUlN3UVFSSmRYMUhGNnAyVGJB?oc=5\" target=\"_blank\">Who is Aman",
+            "relevance_score": 5.1
+          }
+        },
+        {
+          "title": "HubSpot\u2019s Sidekick: Multi-Model AI Code Review with 90% Faster Feedback and 80% Engineer Approval - infoq.com",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ZU01uVFRzaUNWYVlhcUNSbFNLU3BYQlB6WUF5NE1RWHdDQXN6WE5lTFlhTV9GRWZmN3hhSVBDemZSMWlHOEZVRXI4ZU9EeklJNjRPbUdiemZvVGFzbURFY050aE5FeWF6WWZLU3VfRWl4dw?oc=5",
+          "source": "google_news",
+          "metadata": {
+            "publication": "infoq.com",
+            "published_date": "2026-03-18T14:38:22+00:00",
+            "summary": "<a href=\"https://news.google.com/rss/articles/CBMickFVX3lxTE5ZU01uVFRzaUNWYVlhcUNSbFNLU3BYQlB6WUF5NE1RWHdDQXN6WE5lTFlhTV9GRWZmN3hhSVBDemZSMWlHOEZVRXI4ZU9EeklJNjRPbUdiemZvVGFzbURFY050aE5FeWF6WWZLU3VfRWl4dw?oc=5\" target=\"_blank\">HubSpot\u2019s Sidekick: Multi-Model AI Code Review with 90% Faster Feedback and 80% Engineer Approval</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">infoq.com</font>",
+            "relevance_score": 3.79
+          }
+        },
+        {
+          "title": "R Systems Unveils EXIQO to Enable Enterprise-Scale Agentic AI Integration and Accelerate Engineering Velocity - ANI News",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPNDJudXBfSTY1VVFZRU1oOVhmbjhfQVgyYjV2VU1raGtONUp1SkNDQi11Z0RnblVLVm1LZS1GWWJmMWYzX3g4SGNRenF5R1hoTm5SbHFqd2FCSnVoTVdaaHNzYWhfTmhsa3pFN2lXZS1iZGhqRDg3akRDVEVhWHRSTnlOV2E3ZFlKTzlCNExUblVzSlV4Zy1jV3pCbGx4VkJwSUdBemFGUVRqN2R2dkZJMXRCVkV6d1JQbXo2M3BwRTZVcC00MWlNeVlUOWwxemtzWkJ5OHJPNDhnSC04TGJaU1AxeE5OQlpwSjZLai05SnNKZ9IB-gFBVV95cUxOUHRaeG1IT3hHQnBlcmxzRVY0Wm9OaThtUDV5dTBRV1hyakVINWZBUXV4RVoxeHpJbDRMdDRHQTZrOV9uSjd6WEExWGY2ekVVbG5LU29xOV9CWXk2YXppZGh1cEVpWlZwWVA2X0FtTFdQcm8zZ3pES2JlUU54cmk5Vlo4d3QyMXZEV1JwbFczRF9tQnpOcG9Fc1ppT0NENnJmVzB3ZTRGcGdLSGhkU2hrRWZuajZvUEtiOFlITXBYNWUtWFVZYjEySlUwdU5FcERlXzk2RlBmZHg2LTI1c3VkTzdVeUg0ZlBOSWVxdTdNLVpNUVpLdTNxeWx3?oc=5",
+          "source": "google_news",
+          "metadata": {
+            "publication": "ANI News",
+            "published_date": "2026-03-19T05:08:00+00:00",
+            "summary": "<a href=\"https://news.google.com/rss/articles/CBMi8gFBVV95cUxPNDJudXBfSTY1VVFZRU1oOVhmbjhfQVgyYjV2VU1raGtONUp1SkNDQi11Z0RnblVLVm1LZS1GWWJmMWYzX3g4SGNRenF5R1hoTm5SbHFqd2FCSnVoTVdaaHNzYWhfTmhsa3pFN2lXZS1iZGhqRDg3akRDVEVhWHRSTnlOV2E3ZFlKTzlCNExUblVzSlV4Zy1jV3pCbGx4VkJwSUdBemFGUVRqN2R2dkZJMXRCVkV6d1JQbXo2M3BwRTZVcC00MWlNeVlUOWwxemtzWkJ5OHJPNDhnSC04TGJaU1AxeE5OQlpwSjZLai05SnNKZ9IB-gFBVV95cUxOUHRaeG1IT3hHQnBlcmxzRVY0Wm9OaThtUDV5dTBRV1hyakVINWZBUXV4RVoxeHpJbDRMdDRHQTZrOV9uSjd6WEExWGY2ekVVbG5LU29xOV9CWX",
+            "relevance_score": 3.73
+          }
+        },
+        {
+          "title": "Who is Aman Gottumukkala, Indian-origin AI engineer how has joined xAI; receives 'welcome message' from C - The Times of India",
+          "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxONVFja1hqa2pQYmRlMUhERENPamNqRnJaTGxQdFdVVXhNck5zYjJBdEVLWWtzZ09GSXA0bjdtSDJHNENFUUxDdjg2N2hyRnl0eENTNXdIUjRPZHhKWHFWdFE5TE8zb0pheWJwdEdpSl9CQnVSaUtWdWdVS0FYN2dhTndiTmdSVC1id0lnblMwVnB4SnhKV2tDZzZjR2ZObnJKeDMyeTNUY0xCbTZpbUhOQzNhUUJWLXBvaTBZMEhkX19NR28zc3plcVBIUzFENXJLbnlWR054MkFmTmVWUlhKenEwX3k5bmRTZ1RTblROTHA3a2NSZHcxeEUxWGM1LTNya1NjRmxDWkR4Zkp2d2IxdV96ajB0MEQ1N2FRMGRPM0ViUlHSAagCQVVfeXFMT3p2MXREeU5zenZheVA0cXRpb2JVaF9YazNIamYxZmp1RVlrRXhOYkxOcFc5OExjaVByM1gyclN3VW5KVmlYN2I1cm8waEMtZ2ZSbEx3TVVmU3RxQVAtcG1kTHZSVnJNSmlBeklJOGhFQU9iczBjc1dpa1FKcGFadVdqWVhlYmkyYl9oMGhhSGFkUWtJeGRVOWIycTFCblZGNGtZVml6QUxkTFRwdExWNWhnQkt4OWRmZC1DWGs2VGJVaXFDZDZ3UmVkSUtOTkJ1NVZHZmlZNkN4R0JLUFNxdXZnRGRFa1o2T0ktU1M5UGl3eUlESEpRdDRtRHdGdFNpckdES1JPVlZhQkZyQjFJM2x6c2ZieHlvUDZPNVRCeUt6ZEZ6UllPUlE?oc=5",
+          "source": "google_news",
+          "metadata": {
+            "publication": "The Times of India",
+            "published_date": "2026-03-16T10:23:00+00:00",
+            "summary": "<a href=\"https://news.google.com/rss/articles/CBMiowJBVV95cUxONVFja1hqa2pQYmRlMUhERENPamNqRnJaTGxQdFdVVXhNck5zYjJBdEVLWWtzZ09GSXA0bjdtSDJHNENFUUxDdjg2N2hyRnl0eENTNXdIUjRPZHhKWHFWdFE5TE8zb0pheWJwdEdpSl9CQnVSaUtWdWdVS0FYN2dhTndiTmdSVC1id0lnblMwVnB4SnhKV2tDZzZjR2ZObnJKeDMyeTNUY0xCbTZpbUhOQzNhUUJWLXBvaTBZMEhkX19NR28zc3plcVBIUzFENXJLbnlWR054MkFmTmVWUlhKenEwX3k5bmRTZ1RTblROTHA3a2NSZHcxeEUxWGM1LTNya1NjRmxDWkR4Zkp2d2IxdV96ajB0MEQ1N2FRMGRPM0ViUlHSAagCQVVfeXFMT3p2MXREeU5zenZheVA0cXRpb2JVaF9YazNIamYxZmp1RV",
+            "relevance_score": 3.71
+          }
+        },
+        {
+          "title": "OpenAI is Hiring for AI Deployment Engineer in Bengaluru - Analytics India Magazine",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBTYlMzelFCcTZvMExnZk9OQXNZeEd3ZG5RSGgxVGNFVzFDMFpXQ09lNUpHVnBFN0tIN3JDTEF2UmNnY094ckYxaHpFZWpXSzBSUnlWX001NUVZVzMycnItVUN6U0hBaFRWYkQ5bTZwbHg5cVRnOWc?oc=5",
+          "source": "google_news",
+          "metadata": {
+            "publication": "Analytics India Magazine",
+            "published_date": "2026-03-18T13:44:01+00:00",
+            "summary": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTFBTYlMzelFCcTZvMExnZk9OQXNZeEd3ZG5RSGgxVGNFVzFDMFpXQ09lNUpHVnBFN0tIN3JDTEF2UmNnY094ckYxaHpFZWpXSzBSUnlWX001NUVZVzMycnItVUN6U0hBaFRWYkQ5bTZwbHg5cVRnOWc?oc=5\" target=\"_blank\">OpenAI is Hiring for AI Deployment Engineer in Bengaluru</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Analytics India Magazine</font>",
+            "relevance_score": 3.71
+          }
+        },
+        {
+          "title": "Baseless posts about 'Indian engineer' detained in Bahrain share AI image - AFP Fact Check",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1mMXNkZmVpNDRDQmlYZ0xWQTdGdWNvNnc2TWQ0SVFic2NVRnloVTV6YkFrUjZDbDl1aG9nMDRfc1U1a0xJVU5HSi13YlRrek93LXpDQ2RuU3c?oc=5",
+          "source": "google_news",
+          "metadata": {
+            "publication": "AFP Fact Check",
+            "published_date": "2026-03-18T09:42:21+00:00",
+            "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTE1mMXNkZmVpNDRDQmlYZ0xWQTdGdWNvNnc2TWQ0SVFic2NVRnloVTV6YkFrUjZDbDl1aG9nMDRfc1U1a0xJVU5HSi13YlRrek93LXpDQ2RuU3c?oc=5\" target=\"_blank\">Baseless posts about 'Indian engineer' detained in Bahrain share AI image</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AFP Fact Check</font>",
+            "relevance_score": 3.42
+          }
+        }
+      ],
+      "source": "google_news",
+      "query": "AI Engineer",
+      "fetched_at": "2026-03-19 09:21:48.842927",
+      "error": null
+    },
+    "podcasts": {
+      "results": [
+        {
+          "title": "NVIDIA's AI Engineers: Agent Inference at Planetary Scale and \"Speed of Light\" \u2014 Nader Khalil (Brev), Kyle Kranen (Dynamo)",
+          "url": "https://www.latent.space/p/nvidia-brev-dynamo",
+          "source": "podcasts",
+          "metadata": {
+            "podcast_name": "Latent Space: The AI Engineer Podcast",
+            "artist": "Latent.Space",
+            "genre": "Technology",
+            "description": "<p><em>Join Kyle, Nader, Vibhu, and swyx live at </em><a href=\"https://nvda.ws/3NVv7OT\" target=\"_blank\"><em>NVIDIA GTC next week</em></a><em>!</em></p><p><em>Now that AIE Europe tix are ~sold out, our attention turns to </em><a href=\"https://www.ai.engineer/miami\" target=\"_blank\"><em>Miami</em></a><",
+            "published_date": "2026-03-10T06:40:22+00:00",
+            "relevance_score": 6.46,
+            "episode_count": 184
+          }
+        },
+        {
+          "title": "Why Anthropic Thinks AI Should Have Its Own Computer \u2014 Felix Rieseberg of Claude Cowork & Claude Code Desktop",
+          "url": "https://www.latent.space/p/felix-anthropic",
+          "source": "podcasts",
+          "metadata": {
+            "podcast_name": "Latent Space: The AI Engineer Podcast",
+            "artist": "Latent.Space",
+            "genre": "Technology",
+            "description": "<p><a href=\"https://claude.com/product/cowork\" target=\"_blank\">Claude Cowork</a> came out of an accident.</p><p>Felix and the Anthropic team <strong>noticed something interesting with Claude Code</strong>: many users were using it primarily for all kinds of messy knowledge work instead of coding. Ev",
+            "published_date": "2026-03-17T21:39:16+00:00",
+            "relevance_score": 5.21,
+            "episode_count": 184
+          }
+        },
+        {
+          "title": "Senators Say \"Shut AI Down\", Mistral Forage, Pentagon AI, Google AI",
+          "url": "https://podcasts.apple.com/us/podcast/the-ai-engineer-podcast/id1722322146?uo=4",
+          "source": "podcasts",
+          "metadata": {
+            "podcast_name": "The AI Engineer Podcast",
+            "artist": "The AI Engineer Podcast",
+            "genre": "Tech News",
+            "description": "In this episode, we explore Mistral's new 'Forage' platform for custom AI models, the Pentagon's development of AI alternatives to Anthropic, and Google's expansion of its personal intelligence features. We also cover updates on BuzzFeed's 'AI slop apps' and the controversy surrounding ByteDance's '",
+            "published_date": "2026-03-17T21:55:46+00:00",
+            "relevance_score": 4.11,
+            "episode_count": 494
+          }
+        },
+        {
+          "title": "Retrieval After RAG: Hybrid Search, Agents, and Database Design \u2014 Simon H\u00f8rup Eskildsen of Turbopuffer",
+          "url": "https://www.latent.space/p/turbopuffer",
+          "source": "podcasts",
+          "metadata": {
+            "podcast_name": "Latent Space: The AI Engineer Podcast",
+            "artist": "Latent.Space",
+            "genre": "Technology",
+            "description": "<p>Turbopuffer came out of a reading app.</p><p>In <strong>2022</strong>, <strong>Simon</strong> was helping his friends at Readwise scale their infra for a highly requested feature: article recommendations and semantic search. Readwise was paying <strong>~$5k/month</strong> for their relational dat",
+            "published_date": "2026-03-12T22:56:01+00:00",
+            "relevance_score": 4.11,
+            "episode_count": 184
+          }
+        },
+        {
+          "title": "Cursor's Third Era: Cloud Agents",
+          "url": "https://www.latent.space/p/cursor-third-era",
+          "source": "podcasts",
+          "metadata": {
+            "podcast_name": "Latent Space: The AI Engineer Podcast",
+            "artist": "Latent.Space",
+            "genre": "Technology",
+            "description": "<p><em>All speakers are announced at </em><a href=\"https://ai.engineer/europe\" target=\"_blank\"><em>AIE EU</em></a><em>, schedule coming soon. Join us there or in </em><a href=\"https://ai.engineer/miami\" target=\"_blank\"><em>Miami</em></a><em> with the renowned organizers of React Miami! </em><a href=",
+            "published_date": "2026-03-06T02:42:37+00:00",
+            "relevance_score": 4.05,
+            "episode_count": 184
+          }
+        },
+        {
+          "title": "Meta to Layoff 20%, AI Cured Dogs Cancer, Nvidia's New Chip",
+          "url": "https://podcasts.apple.com/us/podcast/the-ai-engineer-podcast/id1722322146?uo=4",
+          "source": "podcasts",
+          "metadata": {
+            "podcast_name": "The AI Engineer Podcast",
+            "artist": "The AI Engineer Podcast",
+            "genre": "Tech News",
+            "description": "In this episode, we discuss significant AI-related news, including a personalized cancer vaccine developed with AI tools for a dog, NVIDIA's upcoming AI chip reveal, and OpenAI's major enterprise venture. We also cover Meta's potential large-scale layoffs to fund its ambitious AI spending, highlight",
+            "published_date": "2026-03-16T15:12:32+00:00",
+            "relevance_score": 3.94,
+            "episode_count": 494
+          }
+        },
+        {
+          "title": "Meta Manus Desktop App, Anthropic Enterprise Lead, OpenAI AWS Deal",
+          "url": "https://podcasts.apple.com/us/podcast/the-ai-engineer-podcast/id1722322146?uo=4",
+          "source": "podcasts",
+          "metadata": {
+            "podcast_name": "The AI Engineer Podcast",
+            "artist": "The AI Engineer Podcast",
+            "genre": "Tech News",
+            "description": "In this episode, we discuss Meta's new Manus desktop AI agent and its implications for AI as an operating system layer. We also cover startup Niv AI addressing AI data center energy consumption, Memories AI's visual memory layer for robotics, and Anthropic's dominance in new enterprise AI spending o",
+            "published_date": "2026-03-18T11:20:08+00:00",
+            "relevance_score": 3.88,
+            "episode_count": 494
+          }
+        },
+        {
+          "title": "Gumloop Raises $50M from Benchmark to Scale AI Agents",
+          "url": "https://podcasts.apple.com/us/podcast/the-ai-engineer-podcast/id1722322146?uo=4",
+          "source": "podcasts",
+          "metadata": {
+            "podcast_name": "The AI Engineer Podcast",
+            "artist": "The AI Engineer Podcast",
+            "genre": "Tech News",
+            "description": "In this episode, we spotlight Gumloop, a startup that recently raised $50 million to empower employees to become AI agent builders. We also explore Gumloop's unique model-agnostic approach and how it helps companies automate tasks and scale AI adoption across their organizations.<br /><br /><br /><b",
+            "published_date": "2026-03-12T21:40:57+00:00",
+            "relevance_score": 3.83,
+            "episode_count": 494
+          }
+        },
+        {
+          "title": "AI App Crisis, OpenAI Does Math, Big Nvidia Deal",
+          "url": "https://podcasts.apple.com/us/podcast/the-ai-engineer-podcast/id1722322146?uo=4",
+          "source": "podcasts",
+          "metadata": {
+            "podcast_name": "The AI Engineer Podcast",
+            "artist": "The AI Engineer Podcast",
+            "genre": "Tech News",
+            "description": "In this episode, we explore the challenges AI-powered apps face with long-term user retention, analyze ChatGPT's new interactive visual explanations for math and science, and discuss Thinking Machine Labs' massive computing deal with Nvidia.<br /><br /><br /><b>Chapters</b><br />00:00 Introduction &",
+            "published_date": "2026-03-11T18:56:21+00:00",
+            "relevance_score": 3.82,
+            "episode_count": 494
+          }
+        },
+        {
+          "title": "Meta Acquires Moltbook: Facebook for AI Bots",
+          "url": "https://podcasts.apple.com/us/podcast/the-ai-engineer-podcast/id1722322146?uo=4",
+          "source": "podcasts",
+          "metadata": {
+            "podcast_name": "The AI Engineer Podcast",
+            "artist": "The AI Engineer Podcast",
+            "genre": "Tech News",
+            "description": "In this episode, we discuss Meta's recent acquisition of Multbook, a social media platform for AI agents originally spun out of OpenClaw. We also explore the controversies and conspiracy theories surrounding Multbook's data integrity and the broader implications for AI agent communication and collab",
+            "published_date": "2026-03-10T16:22:20+00:00",
+            "relevance_score": 3.81,
+            "episode_count": 494
+          }
+        }
+      ],
+      "source": "podcasts",
+      "query": "AI Engineer",
+      "fetched_at": "2026-03-19 09:21:50.138988",
+      "error": null
+    }
+  },
+  "summary": {
+    "top_trends": [
+      "AI Engineer Job Growth",
+      "AI Code Review Tools",
+      "AI Agentic Workflows & Automation",
+      "AI Coding Limitations",
+      "Context Engineering"
+    ],
+    "content_angles": [
+      {
+        "hook": "AI Engineer is the #1 fastest-growing job on LinkedIn, but are you ready for the skills needed?",
+        "angle": "LinkedIn data shows explosive growth in AI Engineer roles, with salaries reaching $350k. However, companies are seeking candidates with practical experience in LLMs, RAG, and PyTorch. Don't just learn the theory; build real-world AI projects to stand out.",
+        "supporting_sources": [
+          "google_linkedin",
+          "youtube"
+        ]
+      },
+      {
+        "hook": "Google Engineers are using AI to review Linux Kernel code. Is this the future of code quality?",
+        "angle": "Google's \"Sashiko\" project uses AI agents for code review, potentially improving code quality and developer efficiency. This signals a shift towards AI-assisted development workflows, but raises questions about the role of human reviewers and the potential for bias in AI-driven assessments.",
+        "supporting_sources": [
+          "hackernews",
+          "reddit"
+        ]
+      },
+      {
+        "hook": "AI agents are automating mortgage processing, reducing it from 18 days to 3-5. Is this the future of work?",
+        "angle": "AI agents are increasingly being used to automate complex workflows, such as mortgage processing, demonstrating their potential to significantly improve efficiency. However, this also raises concerns about job displacement and the need for workers to adapt to new roles in an AI-driven economy.",
+        "supporting_sources": [
+          "hackernews",
+          "rss"
+        ]
+      },
+      {
+        "hook": "Despite the hype, AI models are still failing at simple programming tasks. Are we overestimating their capabilities?",
+        "angle": "A contrarian perspective highlights the limitations of current AI models in solving basic programming problems. This challenges the narrative of AI as a panacea for all coding challenges and suggests that human developers will remain essential for complex and nuanced tasks.",
+        "supporting_sources": [
+          "google_linkedin",
+          "reddit"
+        ]
+      },
+      {
+        "hook": "Context engineering is the new vibe coding. Are you ready to make AI coding assistants actually work?",
+        "angle": "A rapidly growing GitHub repo emphasizes the importance of context engineering for effectively using AI coding assistants. This involves crafting prompts and providing relevant information to guide the AI's output, suggesting a new skill set for developers working with AI.",
+        "supporting_sources": [
+          "github"
+        ]
+      }
+    ],
+    "analysis": "The data reveals several key narratives surrounding AI engineering. The explosive job growth is undeniable, but there's a growing emphasis on practical skills and real-world experience. The rise of AI agents and automation is also a prominent theme, with examples ranging from code review to mortgage processing. However, a contrarian narrative is emerging, highlighting the limitations of AI in coding and questioning the hype surrounding its capabilities. This suggests a need for a more balanced perspective on AI's role in software development. The podcast data provides early signals about the importance of AI agents and the infrastructure required to support them, indicating potential future trends in the field. The focus on context engineering, as highlighted by the GitHub repo, is a surprising angle that could drive high engagement by offering practical advice to developers struggling to use AI coding assistants effectively.",
+    "generated_at": "2026-03-19 09:22:09.687469"
+  }
+}

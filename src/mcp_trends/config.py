@@ -13,6 +13,11 @@ class Settings(BaseSettings):
     youtube_min_views: int = 1000
     hackernews_min_points: int = 5
 
+    reddit_min_score: int = 10
+    reddit_user_agent: str = "mcp-trends/0.1"
+
+    rss_min_relevance_score: float = 0.5
+
     api_host: str = "0.0.0.0"
     api_port: int = 8000
 

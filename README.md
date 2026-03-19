@@ -1,13 +1,19 @@
 # MCP Trends Server
 
-An MCP server that discovers trending topics across multiple sources using LangChain and Gemini.
+An MCP server that discovers trending topics across 8 sources using LangChain and Gemini — built for LinkedIn content strategy.
 
 ## Sources
 
-- **Hacker News** — Top stories via Algolia API
-- **YouTube** — Trending videos via YouTube Data API v3
-- **GitHub** — Trending repos via GitHub Search API
-- **Google/LinkedIn** — LinkedIn posts via Gemini with Google Search grounding
+| # | Source | Auth | What it surfaces |
+|---|--------|------|------------------|
+| 1 | **Hacker News** | None | Developer/founder sentiment via Algolia API |
+| 2 | **YouTube** | API key | Trending videos via YouTube Data API v3 |
+| 3 | **GitHub** | None | Fastest-growing repos via GitHub Search API |
+| 4 | **LinkedIn** | Gemini API key | LinkedIn posts via Gemini + Google Search grounding |
+| 5 | **Reddit** | None | Community discussions via public JSON API |
+| 6 | **RSS Feeds** | None | Curated publications (TechCrunch, SaaStr, HubSpot, etc.) |
+| 7 | **Google News** | None | Breaking news from thousands of publications |
+| 8 | **Podcasts** | None | Thought leader episodes via iTunes + RSS |
 
 ## Setup
 
@@ -27,10 +33,12 @@ An MCP server that discovers trending topics across multiple sources using LangC
    - `GOOGLE_API_KEY` — Get from [Google AI Studio](https://aistudio.google.com/apikey)
    - `YOUTUBE_API_KEY` — Get from [Google Cloud Console](https://console.cloud.google.com/apis/credentials)
 
+   No API keys needed for: Hacker News, GitHub, Reddit, RSS, Google News, Podcasts.
+
 3. Test the server:
 
    ```bash
-   uv run python -m mcp_trends.server
+   uv run python test_local.py
    ```
 
 ## Deploy as REST API
@@ -58,7 +66,11 @@ Main endpoints:
 - `POST /trends/youtube`
 - `POST /trends/github`
 - `POST /trends/google-linkedin`
-- `POST /trends/aggregate`
+- `POST /trends/reddit`
+- `POST /trends/rss`
+- `POST /trends/google-news`
+- `POST /trends/podcasts`
+- `POST /trends/aggregate` — All 8 sources + AI summary
 - `GET /trends/{source}?topic=...&limit=...`
 
 Example request:
@@ -66,7 +78,7 @@ Example request:
 ```bash
 curl -X POST http://localhost:8000/trends/aggregate \
   -H "Content-Type: application/json" \
-  -d '{"topic":"ai agents","limit":5,"period":"week"}'
+  -d '{"topic":"AI Engineer","limit":5,"period":"week"}'
 ```
 
 ## MCP Client Configuration
@@ -109,4 +121,16 @@ Add to `claude_desktop_config.json`:
 | `find_youtube_trends` | Search YouTube for trending videos (last 7 days) |
 | `find_github_trends` | Search GitHub for trending repositories |
 | `find_google_linkedin_trends` | Search LinkedIn via Gemini + Google Search |
-| `aggregate_trends` | Query all sources + AI-generated trend summary |
+| `find_reddit_trends` | Search Reddit for trending discussions |
+| `find_rss_trends` | Search curated industry publications |
+| `find_google_news_trends` | Search Google News for breaking articles |
+| `find_podcast_trends` | Search podcasts for trending episodes |
+| `aggregate_trends` | Query all 8 sources + AI-generated trend summary |
+
+## Summarizer Intelligence
+
+The AI summarizer (Gemini 2.0 Flash) applies three ranking strategies:
+
+- **Cross-platform signal detection** — Stories appearing in 2+ sources are auto-promoted to top trends
+- **GitHub velocity surfacing** — Fastest-growing repos (by stars/day) are highlighted as primary evidence
+- **Source-aware analysis** — Each source type is interpreted differently (e.g., podcast signals indicate trends 2-4 weeks before they hit LinkedIn)

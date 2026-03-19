@@ -9,7 +9,11 @@ from pathlib import Path
 from mcp_trends.sources.hackernews import search_hackernews
 from mcp_trends.sources.youtube import search_youtube
 from mcp_trends.sources.github import search_github
-from mcp_trends.sources.google import search_google_linkedin
+from mcp_trends.sources.linkedin import search_google_linkedin
+from mcp_trends.sources.reddit import search_reddit
+from mcp_trends.sources.rss import search_rss
+from mcp_trends.sources.google_news import search_google_news
+from mcp_trends.sources.podcast import search_podcasts
 from mcp_trends.chains.summarizer import summarize_trends
 
 RESULTS_DIR = Path(__file__).parent / "results"
@@ -19,7 +23,11 @@ SOURCES = {
     "2": ("YouTube", search_youtube),
     "3": ("GitHub", search_github),
     "4": ("Google/LinkedIn", search_google_linkedin),
-    "5": ("All + Summary", None),
+    "5": ("Reddit", search_reddit),
+    "6": ("RSS Feeds", search_rss),
+    "7": ("Google News", search_google_news),
+    "8": ("Podcasts", search_podcasts),
+    "9": ("All + Summary", None),
 }
 
 
@@ -74,8 +82,12 @@ async def search_all(topic, limit, period="week"):
         search_youtube(topic, limit),
         search_github(topic, limit),
         search_google_linkedin(topic, limit),
+        search_reddit(topic, limit),
+        search_rss(topic, limit),
+        search_google_news(topic, limit),
+        search_podcasts(topic, limit),
     )
-    names = ["Hacker News", "YouTube", "GitHub", "Google/LinkedIn"]
+    names = ["Hacker News", "YouTube", "GitHub", "Google/LinkedIn", "Reddit", "RSS Feeds", "Google News", "Podcasts"]
     source_map = {}
     for name, result in zip(names, results):
         print(f"\n--- {name} ---")
@@ -100,8 +112,8 @@ async def main():
     print("=" * 50)
 
     while True:
-        print("\nEnter a topic to search (or 'q' to quit):")
-        topic = input("> ").strip()
+        print("\nEnter a topic to search [default=AI Engineer] (or 'q' to quit):")
+        topic = input("> ").strip() or "AI Engineer"
         if not topic or topic.lower() == "q":
             print("Bye!")
             break
@@ -109,26 +121,26 @@ async def main():
         print("\nSources:")
         for key, (name, _) in SOURCES.items():
             print(f"  {key}. {name}")
-        print("Pick a source [1-5, default=5]:")
-        choice = input("> ").strip() or "5"
+        print("Pick a source [1-9, default=9]:")
+        choice = input("> ").strip() or "9"
 
-        print("\nTime period — w=week, m=month, q=quarter [default=w]:")
-        period_input = input("> ").strip().lower() or "w"
+        print("\nTime period — w=week, m=month, q=quarter [default=m]:")
+        period_input = input("> ").strip().lower() or "m"
         period_map = {"w": "week", "m": "month", "q": "quarter"}
-        period = period_map.get(period_input, "week")
+        period = period_map.get(period_input, "month")
 
-        print(f"\nHow many results? [default=5]:")
-        limit_str = input("> ").strip() or "5"
+        print(f"\nHow many results? [default=10]:")
+        limit_str = input("> ").strip() or "10"
         limit = int(limit_str) if limit_str.isdigit() else 5
 
         print(f"\nSearching '{topic}' (period={period})...\n")
 
-        if choice == "5":
+        if choice == "9":
             await search_all(topic, limit, period)
         elif choice in SOURCES:
             name, fn = SOURCES[choice]
             print(f"--- {name} ---")
-            if name == "Hacker News":
+            if name in ("Hacker News", "Reddit"):
                 result = await fn(topic, limit, period)
             else:
                 result = await fn(topic, limit)
