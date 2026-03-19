@@ -30,3 +30,5 @@ htmlcov/
 # IDE/editor folders
 .idea/
 .vscode/
+
+docs/*

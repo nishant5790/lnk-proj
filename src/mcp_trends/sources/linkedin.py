@@ -1,10 +1,14 @@
+import asyncio
 import json
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage
+import httpx
 
 from mcp_trends.config import settings
 from mcp_trends.models import SourceResult, TrendItem
+
+GROUNDING_REDIRECT_PREFIX = "https://vertexaisearch.cloud.google.com/grounding-api-redirect/"
 
 
 async def search_google_linkedin(topic: str, limit: int = 10) -> SourceResult:
@@ -64,12 +68,46 @@ async def search_google_linkedin(topic: str, limit: int = 10) -> SourceResult:
                 )
             )
 
+        items = await _resolve_all_urls(items)
+
         return SourceResult(results=items, source="google_linkedin", query=topic)
 
     except Exception as e:
         return SourceResult(
             results=[], source="google_linkedin", query=topic, error=str(e)
         )
+
+
+async def _resolve_redirect(client: httpx.AsyncClient, url: str) -> str:
+    if not url.startswith(GROUNDING_REDIRECT_PREFIX):
+        return url
+    try:
+        resp = await client.head(url, follow_redirects=True)
+        return str(resp.url)
+    except Exception:
+        try:
+            resp = await client.get(url, follow_redirects=True)
+            return str(resp.url)
+        except Exception:
+            return url
+
+
+async def _resolve_all_urls(items: list[TrendItem]) -> list[TrendItem]:
+    redirect_items = [
+        (i, item) for i, item in enumerate(items)
+        if item.url.startswith(GROUNDING_REDIRECT_PREFIX)
+    ]
+    if not redirect_items:
+        return items
+
+    async with httpx.AsyncClient(timeout=10) as client:
+        tasks = [_resolve_redirect(client, item.url) for _, item in redirect_items]
+        resolved = await asyncio.gather(*tasks)
+
+    for (idx, _), real_url in zip(redirect_items, resolved):
+        items[idx].url = real_url
+
+    return items
 
 
 def _parse_linkedin_results(content: str, topic: str) -> list[TrendItem]:

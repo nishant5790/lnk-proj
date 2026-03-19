@@ -1,5 +1,6 @@
 import asyncio
 from datetime import datetime, timezone
+from typing import Literal
 
 import httpx
 
@@ -9,6 +10,15 @@ from mcp_trends.models import SourceResult, TrendItem
 SEARCH_URL = "https://www.reddit.com/search.json"
 MAX_RETRIES = 3
 BASE_DELAY = 1.0
+
+RedditSort = Literal["relevance", "hot", "new", "top", "comments"]
+RedditTime = Literal["hour", "day", "week", "month", "year", "all"]
+
+PERIOD_TO_REDDIT_TIME: dict[str, RedditTime] = {
+    "week": "week",
+    "month": "month",
+    "quarter": "year",
+}
 
 
 async def _reddit_get(client: httpx.AsyncClient, url: str, params: dict) -> httpx.Response:
@@ -26,7 +36,14 @@ async def _reddit_get(client: httpx.AsyncClient, url: str, params: dict) -> http
     )
 
 
-async def search_reddit(topic: str, limit: int = 10) -> SourceResult:
+async def search_reddit(
+    topic: str,
+    limit: int = 10,
+    period: str = "week",
+    sort: RedditSort = "hot",
+) -> SourceResult:
+    time_filter = PERIOD_TO_REDDIT_TIME.get(period, period)
+
     try:
         async with httpx.AsyncClient(
             timeout=settings.http_timeout,
@@ -34,8 +51,8 @@ async def search_reddit(topic: str, limit: int = 10) -> SourceResult:
         ) as client:
             resp = await _reddit_get(client, SEARCH_URL, {
                 "q": topic,
-                "sort": "hot",
-                "t": "week",
+                "sort": sort,
+                "t": time_filter,
                 "limit": min(limit * 3, 100),
                 "type": "link",
             })
