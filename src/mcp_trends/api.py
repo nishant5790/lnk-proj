@@ -10,6 +10,7 @@ from pydantic import BaseModel, Field
 from mcp_trends.chains.summarizer import summarize_trends
 from mcp_trends.config import settings
 from mcp_trends.models import AggregatedTrends, SourceResult
+from mcp_trends.source_registry import SOURCE_REGISTRY, SourceMetadata
 from mcp_trends.sources.github import search_github
 from mcp_trends.sources.linkedin import search_google_linkedin
 from mcp_trends.sources.hackernews import search_hackernews
@@ -55,8 +56,25 @@ async def root() -> dict[str, object]:
             "/trends/google-news",
             "/trends/podcasts",
             "/trends/aggregate",
+            "/sources",
         ],
     }
+
+
+@app.get(
+    "/sources",
+    response_model=list[SourceMetadata],
+    summary="List all available trend sources with rich metadata",
+    description=(
+        "Returns detailed metadata for every trend source this API supports. "
+        "Each entry describes what the source is, what kinds of queries it is "
+        "best suited for, what data fields it returns, quality thresholds, "
+        "rate-limit behaviour, and known limitations. Designed to give an LLM "
+        "enough context to decide which source(s) to call for a given user query."
+    ),
+)
+async def list_sources() -> list[SourceMetadata]:
+    return SOURCE_REGISTRY
 
 
 @app.post("/trends/hackernews", response_model=SourceResult)
