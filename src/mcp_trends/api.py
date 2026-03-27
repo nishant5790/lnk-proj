@@ -11,6 +11,7 @@ from mcp_trends.chains.summarizer import summarize_trends
 from mcp_trends.config import settings
 from mcp_trends.models import AggregatedTrends, SourceResult
 from mcp_trends.source_registry import SOURCE_REGISTRY, SourceMetadata
+from mcp_trends.server import mcp as mcp_server
 from mcp_trends.sources.github import search_github
 from mcp_trends.sources.linkedin import search_google_linkedin
 from mcp_trends.sources.hackernews import search_hackernews
@@ -27,6 +28,8 @@ app = FastAPI(
     description="REST API wrapper for the MCP Trends server",
     version="0.1.0",
 )
+
+app.mount("/mcp", mcp_server.streamable_http_app(path="/"))
 
 
 class TrendRequest(BaseModel):
