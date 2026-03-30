@@ -472,4 +472,65 @@ SOURCE_REGISTRY: list[SourceMetadata] = [
             "iTunes API may rate-limit requests but no automatic retry is implemented — errors surface directly",
         ],
     ),
+    SourceMetadata(
+        id="arxiv",
+        name="arXiv",
+        description=(
+            "arXiv (arxiv.org) is an open-access repository hosting over 2 million scholarly "
+            "preprints in physics, mathematics, computer science, quantitative biology, "
+            "quantitative finance, statistics, electrical engineering, and economics. Operated "
+            "by Cornell University, it is the primary channel for researchers to share "
+            "cutting-edge manuscripts before (or instead of) traditional peer-reviewed "
+            "publication. Papers appear on arXiv days to months before they show up in blogs, "
+            "news, or conference proceedings — making it the earliest signal source in the "
+            "pipeline. Content is dense, technical, and authoritative. For LinkedIn content "
+            "strategy, arXiv provides the credibility of citing peer-level research: 'according "
+            "to a recent paper by researchers at...' carries weight that blog posts cannot match."
+        ),
+        integration=(
+            "Queries the arXiv Atom API (export.arxiv.org/api/query) with full-text search "
+            "across title, abstract, and author fields. Results are sorted by submission date "
+            "(newest first). Fetches up to 3x the requested limit, then filters client-side "
+            "by date window and relevance score. Primary window is 7 days; if fewer than 3 "
+            "results pass the relevance threshold, automatically retries with a 30-day window. "
+            "Each paper is scored using the shared keyword + recency relevance algorithm "
+            "(min threshold: 0.5). Parsed with feedparser (Atom format). No API key required. "
+            "arXiv TOU requests a 3-second delay between calls."
+        ),
+        best_for=[
+            "Citing cutting-edge academic research for credibility",
+            "Finding the earliest signal on emerging technical topics",
+            "Understanding the research landscape behind a trending topic",
+            "Sourcing author names and institutions for attribution",
+            "Discovering foundational papers behind tools and frameworks",
+        ],
+        content_type="Academic preprints (papers) with abstracts and author metadata",
+        default_time_window="7 days (automatic fallback to 30 days if fewer than 3 results)",
+        supports_period_param=False,
+        quality_signals=["relevance_score", "num_versions"],
+        quality_thresholds={"min_relevance_score": 0.5},
+        result_metadata_fields={
+            "authors": "List of author names (up to 5 shown, with '... +N more' if truncated)",
+            "author_count": "Total number of authors on the paper",
+            "abstract": "Paper abstract (up to 500 characters)",
+            "categories": "arXiv category tags (e.g. cs.AI, cs.LG, stat.ML)",
+            "pdf_url": "Direct link to the PDF version of the paper",
+            "published_date": "ISO timestamp of initial submission",
+            "updated_date": "ISO timestamp of the latest revision",
+            "num_versions": "Number of versions/revisions — higher values suggest active refinement",
+            "relevance_score": "Computed relevance score based on keyword match and recency",
+        },
+        requires_api_key=None,
+        rate_limited=True,
+        api_endpoint="/trends/arxiv",
+        example_queries=["large language models", "reinforcement learning from human feedback", "graph neural networks", "AI safety"],
+        limitations=[
+            "No engagement metrics — arXiv has no views, citations, or download counts in its API",
+            "arXiv TOU requests a 3-second delay between API calls",
+            "Abstract only — full paper text is not fetched or indexed",
+            "Broad search across all categories may return tangentially related papers from other fields",
+            "Fallback from 7-day to 30-day window is invisible to the caller",
+            "Shares the same min_relevance_score threshold (0.5) as RSS and Google News",
+        ],
+    ),
 ]
