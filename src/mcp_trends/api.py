@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import asyncio
+from contextlib import asynccontextmanager
 from typing import Literal
 
 import uvicorn
@@ -20,16 +21,27 @@ from mcp_trends.sources.reddit import search_reddit
 from mcp_trends.sources.rss import search_rss
 from mcp_trends.sources.google_news import search_google_news
 from mcp_trends.sources.podcast import search_podcasts
+from mcp_trends.sources.arxiv import search_arxiv
 
 Period = Literal["week", "month", "quarter"]
+
+_mcp_http = mcp_server.streamable_http_app()
+
+
+@asynccontextmanager
+async def _lifespan(app):
+    async with mcp_server.session_manager.run():
+        yield
+
 
 app = FastAPI(
     title="MCP Trends API",
     description="REST API wrapper for the MCP Trends server",
     version="0.1.0",
+    lifespan=_lifespan,
 )
 
-app.mount("/mcp", mcp_server.streamable_http_app(path="/"))
+app.mount("/mcp", _mcp_http)
 
 
 class TrendRequest(BaseModel):
@@ -58,6 +70,7 @@ async def root() -> dict[str, object]:
             "/trends/rss",
             "/trends/google-news",
             "/trends/podcasts",
+            "/trends/arxiv",
             "/trends/aggregate",
             "/sources",
         ],
@@ -120,6 +133,11 @@ async def podcast_trends(payload: TrendRequest) -> SourceResult:
     return await search_podcasts(payload.topic, payload.limit)
 
 
+@app.post("/trends/arxiv", response_model=SourceResult)
+async def arxiv_trends(payload: TrendRequest) -> SourceResult:
+    return await search_arxiv(payload.topic, payload.limit)
+
+
 @app.post("/trends/aggregate", response_model=AggregatedTrends)
 async def aggregate_trends(payload: TrendRequest) -> AggregatedTrends:
     results = await asyncio.gather(
@@ -131,10 +149,11 @@ async def aggregate_trends(payload: TrendRequest) -> AggregatedTrends:
         search_rss(payload.topic, payload.limit),
         search_google_news(payload.topic, payload.limit),
         search_podcasts(payload.topic, payload.limit),
+        search_arxiv(payload.topic, payload.limit),
         return_exceptions=True,
     )
 
-    source_names = ["hackernews", "youtube", "github", "google_linkedin", "reddit", "rss", "google_news", "podcasts"]
+    source_names = ["hackernews", "youtube", "github", "google_linkedin", "reddit", "rss", "google_news", "podcasts", "arxiv"]
     source_results: dict[str, SourceResult] = {}
 
     for name, result in zip(source_names, results):
@@ -154,7 +173,7 @@ async def aggregate_trends(payload: TrendRequest) -> AggregatedTrends:
 
 @app.get("/trends/{source}", response_model=SourceResult)
 async def trends_by_source(
-    source: Literal["hackernews", "youtube", "github", "google-linkedin", "reddit", "rss", "google-news", "podcasts"],
+    source: Literal["hackernews", "youtube", "github", "google-linkedin", "reddit", "rss", "google-news", "podcasts", "arxiv"],
     topic: str = Query(..., min_length=1),
     limit: int = Query(10, ge=1, le=50),
     period: Period = Query("week"),
@@ -173,6 +192,8 @@ async def trends_by_source(
         return await search_google_news(topic, limit)
     if source == "podcasts":
         return await search_podcasts(topic, limit)
+    if source == "arxiv":
+        return await search_arxiv(topic, limit)
     return await search_google_linkedin(topic, limit)
 
 

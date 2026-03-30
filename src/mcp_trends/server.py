@@ -12,11 +12,14 @@ from mcp_trends.sources.reddit import search_reddit
 from mcp_trends.sources.rss import search_rss
 from mcp_trends.sources.google_news import search_google_news
 from mcp_trends.sources.podcast import search_podcasts
+from mcp_trends.sources.arxiv import search_arxiv
 from mcp_trends.chains.summarizer import summarize_trends
 
 mcp = FastMCP(
     "Trends MCP Server",
     instructions="Find trending topics across Hacker News, YouTube, GitHub, LinkedIn, Reddit, RSS feeds, Google News, and Podcasts",
+    stateless_http=True,
+    json_response=True,
 )
 
 
@@ -127,11 +130,28 @@ async def find_podcast_trends(topic: str, limit: int = 10) -> str:
 
 
 @mcp.tool()
+async def find_arxiv_trends(topic: str, limit: int = 10) -> str:
+    """Search arXiv for recent academic papers about a topic.
+
+    Surfaces cutting-edge research published in the last 7 days (falls back to
+    30 days for niche topics). Useful for citing scholarly work and understanding
+    the academic research landscape around a topic.
+
+    Args:
+        topic: The topic to search for (e.g., "large language models", "reinforcement learning")
+        limit: Maximum number of results to return (default: 10)
+    """
+    result = await search_arxiv(topic, limit)
+    return result.model_dump_json(indent=2)
+
+
+@mcp.tool()
 async def aggregate_trends(topic: str, limit: int = 5) -> str:
     """Search ALL sources for trending content about a topic and provide an AI-generated summary.
 
-    Queries Hacker News, YouTube, GitHub, LinkedIn, Reddit, RSS feeds, and Podcasts
-    concurrently, then uses Gemini to analyze and summarize the top trends across all sources.
+    Queries Hacker News, YouTube, GitHub, LinkedIn, Reddit, RSS feeds, Podcasts,
+    and arXiv concurrently, then uses Gemini to analyze and summarize the top
+    trends across all sources.
 
     Args:
         topic: The topic to search for
@@ -146,10 +166,11 @@ async def aggregate_trends(topic: str, limit: int = 5) -> str:
         search_rss(topic, limit),
         search_google_news(topic, limit),
         search_podcasts(topic, limit),
+        search_arxiv(topic, limit),
         return_exceptions=True,
     )
 
-    source_names = ["hackernews", "youtube", "github", "google_linkedin", "reddit", "rss", "google_news", "podcasts"]
+    source_names = ["hackernews", "youtube", "github", "google_linkedin", "reddit", "rss", "google_news", "podcasts", "arxiv"]
     source_results = {}
 
     for name, result in zip(source_names, results):
